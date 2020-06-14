@@ -1,0 +1,73 @@
+:root {
+  --sidebar-width: 11.5rem;
+}
+
+[data-id="main"] {
+  padding-top: 0px;
+  padding-right: 16px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  font-size: 0.8rem;
+  float: left;
+}
+
+h1 {
+  text-transform: capitalize;
+  color: rgb(32, 53, 104);
+  font-weight: 600;
+}
+
+.aside h2 {
+  font-weight: 500;
+  font-size: 1rem;
+  color: rgb(32, 53, 104);
+}
+
+.aside {
+  background-color: rgb(231, 202, 168);
+  padding-top: 0px;
+  padding-right: 7px;
+  padding-bottom: 0px;
+  padding-left: 15px;
+  font-size: 0.8rem;
+  float: left;
+  float: left;
+}
+
+[data-id="disclaimer"] {
+  position: absolute;
+  bottom: 0;
+  right: var(--sidebar-horizontal-padding);
+  font-size: 0.75rem;
+  font-style: italic;
+  line-height: 1;
+  color: #777;
+  padding-left: 15px;
+  margin-right: -15px;
+  text-align: left;
+}
+
+a {
+  color: rgb(227, 88, 49);
+
+}
+
+.aside .level2 {
+  margin-top: 0.3in;
+}
+
+.pagedjs_page:first-of-type {
+  --sidebar-background-color: rgb(231, 202, 168);
+}
+
+.pagedjs_page:not(:first-of-type) {
+  --sidebar-background-color: rgb(231, 202, 168);
+  --sidebar-width: 2rem;
+  --main-width: calc(var(--content-width) - var(--sidebar-width));
+  --pagedjs-margin-top: 0.5in;
+}
+
+.pagedjs_page {
+  --pagedjs-margin-right: 0.25in;
+  --pagedjs-margin-top: 0.7in;
+}

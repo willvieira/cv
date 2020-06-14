@@ -1,0 +1,171 @@
+---
+title: "Willian's CV"
+author: Willian Vieira
+date: "`r Sys.Date()`"
+output:
+  pagedown::html_resume:
+    css: ['css/styles.css', 'resume', 'https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css']
+    self_contained: true
+---
+
+```{r, include=FALSE, cache = F}
+knitr::opts_chunk$set(
+  results='asis',
+  echo = FALSE
+)
+
+library(glue)
+library(tidyverse)
+
+
+# Holds all the links that were inserted for placement at the end
+PDF_EXPORT <- FALSE
+
+source('parsing_functions.R')
+
+# Load csv with position info
+position_data <- readr::read_csv('data/positions.csv')
+```
+
+
+Aside
+================================================================================
+
+Contact {#contact}
+--------------------------------------------------------------------------------
+
+- <i class="fa fa-envelope"></i> w.vieiraw@gmail.com
+- <i class="fa fa-twitter"></i> [WillVieira90](https://twitter.com/willvieira90)
+- <i class="fa fa-github"></i> [WillVieira](https://github.com/willvieira)
+- <i class="fa fa-globe"></i> [willvieira.github.io/](https://willvieira.github.io/)
+- <i class="ai ai-google-scholar"></i> [Publications](https://scholar.google.com/citations?user=GyChlIoAAAAJ&hl=en)
+- <i class="ai ai-orcid"></i> [0000-0003-0283-4570](https://orcid.org/0000-0003-0283-4570)
+
+
+Quantitative skills
+------------------------------------
+
+Regression, Mathematical modelling, Random Forest, Hierarchical models, Bayesian statistics
+
+
+Programming skills
+------------------------------------
+
+<span style="font-weight:600;">Data analysis</span>: <br>R, Python, Stan, HPC<br>
+
+<span style="font-weight:600;">Data base</span>: SQLite<br>
+
+<span style="font-weight:600;">Automation/reports</span>: <br>markdown, pandoc,<br>LateX, bash, makefile<br> 
+
+<span style="font-weight:600;">Web</span>: HTML/CSS, ShinyApp<br>
+
+<span style="font-weight:600;">Dev (CI/CD)</span>: Git, Docker, Travis, GitHub Actions, AppVeyor
+
+
+Languages
+------------------------------------
+
+**Portuguese**<span style="font-size:11px;"> Mother tongue</span><br>
+**English**<br>
+**French**<br>
+
+
+Disclaimer {#disclaimer}
+--------------------------------------------------------------------------------
+
+Made with [**pagedown**](https://github.com/rstudio/pagedown).
+
+The source code is available at [github.com/willvieira/cv](https://github.com/willvieira/cv).
+
+Last updated on `r Sys.Date()`.
+
+[<i class='fas fa-download'></i> Download a PDF of this CV](https://willvieira.github.io/cv/WillianVieira.pdf)
+
+
+Main
+================================================================================
+
+ <span style="font-weight:600">Willian Vieira</span> <span style="font-size: 13px;">PhD candidate</span>{#title}
+--------------------------------------------------------------------------------
+
+
+<span style="font-size: 1rem;">< <i class="fa fa-chart-bar"></i> + <i class="fa fa-robot"></i> >  Quantitative ecologist | I like to automate everything </span>
+
+
+Education {data-icon=graduation-cap data-concise=true}
+--------------------------------------------------------------------------------
+
+```{r}
+print_section(position_data, 'education')
+```
+
+
+
+Research Experience {data-icon=laptop}
+--------------------------------------------------------------------------------
+
+```{r}
+print_section(position_data, 'research_positions')
+```
+
+
+Teaching Experience {data-icon=chalkboard-teacher}
+--------------------------------------------------------------------------------
+
+```{r}
+print_section(position_data, 'teaching_positions')
+```
+
+Training {data-icon=certificate}
+--------------------------------------------------------------------------------
+
+```{r}
+print_section(position_data, 'training')
+```
+
+
+Publications {data-icon=book}
+--------------------------------------------------------------------------------
+
+
+```{r}
+# TODO automate it
+# Load publications from ORCID
+#my_dois <- try(rorcid::identifiers(rorcid::works("0000-0003-0283-4570")))
+#pubs <- rcrossref::cr_cn(dois = my_dois, format = "text")
+
+# Add my name in bold and convert DOI in a link
+#fixedPubs <- lapply(pubs, editRefs)
+
+#print_section(position_data, 'training')
+```
+
+### Paying colonization credit with forest management could accelerate northward range shift of temperate trees
+
+In preparation <a href="https://github.com/willvieira/ms_STM-managed"><i class="fa fa-github"></i></a>
+
+N/A
+
+2020
+
+- <span style="text-decoration: underline;">Vieira W.</span>, Boulangeat, I., Brice M.H., Bradley, R., Gravel, D.
+
+
+
+### Moderate disturbances accelerate forest transition dynamics under climate change in the temperate–boreal ecotone of eastern North America
+
+Global Change Biology <a href="https://doi.org/10.1111%2Fgcb.15143"><i class="ai ai-doi"></i></a> <a href="https://github.com/mhBrice/transition"><i class="fa fa-github"></i></a>
+
+N/A
+
+2020
+
+- Brice M.H., Vissault S., <span style="text-decoration: underline;">Vieira W.</span>, Gravel, D., Legendre, P., Fortin, M.J.
+
+
+Selected Talks and Posters {data-icon=chalkboard-teacher}
+--------------------------------------------------------------------------------
+
+```{r}
+print_section(position_data, 'talk_poster')
+```
