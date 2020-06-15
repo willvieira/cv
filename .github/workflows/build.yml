@@ -1,0 +1,73 @@
+name: Build and deploy
+
+on:
+    push:
+        branches:
+        - master
+
+    schedule:
+        - cron: '0 5 1,15 * *'
+
+
+jobs:
+  Build_deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - uses: r-lib/actions/setup-pandoc@v1
+        with:
+          pandoc-version: '2.7.3'
+      - uses: r-lib/actions/setup-r@v1
+        with:
+            r-version: '3.6.0'
+
+      - name: Python 3.6
+        uses: actions/setup-python@v1
+        with:
+          python-version: '3.6'
+
+      - name: Install pandoc filters
+        run: |
+          python -m pip install --upgrade pip
+          pip install pandoc-fignos pandoc-eqnos pandoc-tablenos pandoc-secnos pandoc-xnos
+          which pandoc pandoc-fignos pandoc-eqnos pandoc-tablenos pandoc-secnos pandoc-xnos
+
+      - name: Install LaTeX
+        run: |
+          sudo apt-get install texlive-latex-base
+          sudo apt-get install texlive-fonts-recommended
+          sudo apt-get install texlive-fonts-extra
+          sudo apt-get install texlive-latex-extra
+
+      - name: Install system dependencies
+        if: runner.os == 'Linux'
+        env:
+          RHUB_PLATFORM: linux-x86_64-ubuntu-gcc
+        run: |
+          sudo apt-get install libpoppler-cpp-dev
+          sudo apt-get install libcurl4-openssl-dev
+          sudo apt-get install libglu1-mesa-dev
+          sudo apt-get install libmagick++-dev
+
+      - name: Install R dependencies
+        run: Rscript -e "install.packages(c('glue', 'tidyverse', 'readr', 'rmarkdown', 'pagedown', 'rorcid', 'rcrossref'))"
+
+      - name: Build html
+        run: Rscript -e "rmarkdown::render('index.Rmd')"
+
+      - name: Build pdf
+        run: Rscript -e "pagedown::chrome_print(input = 'index.html', output = 'index.pdf')"
+
+      - name: Prepare deployment
+        run: |
+          mkdir docs
+          mv index.html docs/index.html
+          mv index.pdf docs/WillianVieira.pdf
+      
+      - name: Deploy gh_pages
+        uses: JamesIves/github-pages-deploy-action@releases/v3
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH: gh-pages
+          FOLDER: docs
+          SINGLE_COMMIT: true
