@@ -21,7 +21,7 @@ library(tidyverse)
 # Holds all the links that were inserted for placement at the end
 PDF_EXPORT <- FALSE
 
-source('parsing_functions.R')
+source('R/parsing_functions.R')
 
 # Load csv with position info
 position_data <- readr::read_csv('data/positions.csv')
