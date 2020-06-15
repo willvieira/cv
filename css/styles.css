@@ -24,7 +24,7 @@ h1 {
 }
 
 .aside {
-  background-color: rgb(231, 202, 168);
+  background-color: rgb(255, 227, 200);
   padding-top: 0px;
   padding-right: 7px;
   padding-bottom: 0px;
@@ -57,11 +57,11 @@ a {
 }
 
 .pagedjs_page:first-of-type {
-  --sidebar-background-color: rgb(231, 202, 168);
+  --sidebar-background-color: rgb(255, 227, 200);
 }
 
 .pagedjs_page:not(:first-of-type) {
-  --sidebar-background-color: rgb(231, 202, 168);
+  --sidebar-background-color: rgb(255, 227, 200);
   --sidebar-width: 2rem;
   --main-width: calc(var(--content-width) - var(--sidebar-width));
   --pagedjs-margin-top: 0.5in;
