@@ -65,9 +65,9 @@ Programming skills
 Languages
 ------------------------------------
 
-**Portuguese**<span style="font-size:11px;"> Mother tongue</span><br>
-**English**<br>
-**French**<br>
+**Portuguese**<span style="font-size:11px;"> Native</span><br>
+**French**<span style="font-size:11px;"> Full Professional</span><br>
+**English**<span style="font-size:11px;"> Professional</span><br>
 
 
 Disclaimer {#disclaimer}
