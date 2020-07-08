@@ -1,5 +1,5 @@
 # Regex to locate links in text
-find_link <- regex("
+find_link <- stringr::regex("
   \\[   # Grab opening square bracket
   .+?   # Find smallest internal text as possible
   \\]   # Closing square bracket
@@ -92,41 +92,54 @@ print_section <- function(position_data, section_id){
     )
 }
 
-# Construct a bar chart of skills
-build_skill_bars <- function(skills, out_of = 5){
-  bar_color <- "#969696"
-  bar_background <- "#d9d9d9"
-  skills %>% 
-    mutate(width_percent = round(100*level/out_of)) %>% 
-    glue_data(
-      "<div class = 'skill-bar'",
-      "style = \"background:linear-gradient(to right,",
-      "{bar_color} {width_percent}%,",
-      "{bar_background} {width_percent}% 100%)\" >",
-      "{skill}",
-      "</div>"
+
+# Retrieve and edit publication list
+get_publications <- function(ORCID, underlineName)
+{
+    # retrieve publication list from ORCID
+    my_dois <- rorcid::identifiers(rorcid::works(ORCID))
+    pubs <- RefManageR::ReadCrossRef(my_dois)
+
+    # For each pub, organize title, journal, year, authors, and DOI
+    editedPubs <- list()
+    for(pub in pubs)
+    {
+        # First get initials of given names
+        Given <- sapply(pub$author$given, strsplit, '-')
+        Given <- lapply(Given, function(x) {paste(paste0(substring(x, 1, 1), '.'), collapse = '')})
+        
+        # Merge with family name
+        authors <- paste(pub$author$family, Given, sep = ', ')
+
+        # format my name to underlined
+        authors <- gsub(underlineName, paste0('<span style="text-decoration: underline;">', underlineName, '</span>'), authors)
+        
+        # add to main list
+        editedPubs[[pub$doi]] <- list(title = pub$title, journal = pub$journal, year = pub$year, authors = paste0(authors, collapse = ', '), doi = pub$url)
+                
+    }
+    
+    return( editedPubs )
+
+}
+
+
+print_publications <- function(pubs)
+{
+  for(pub in pubs)
+  {
+    print(
+      glue::glue('
+              ### {pub$title}
+              \n
+              {pub$journal} <a href="pub$doi"><i class="ai ai-doi"></i></a>
+              \n
+              N/A
+              \n
+              {pub$year}
+              \n
+              - {pub$authors}'
+      )
     )
-}
-
-
-editRefs <- function(ref)
-{
-    # first identify my name and bold it
-    ref <- paste0(gsub('Vieira, W.*', '', ref),
-                  '**Vieira, W**.',
-                  gsub('.*Vieira, W.', '', ref))
-
-    # Hide DOI and insert as a Link
-    ref <- paste0(gsub('doi:.*', '', ref),
-    '[link](https://doi.org/',
-    gsub('.*doi:', '', ref),
-    ')')
-
-    return( ref )    
-}
-
-
-print_refs <- function(refs)
-{
-  #TODO
+  }
 }

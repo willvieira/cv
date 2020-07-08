@@ -128,39 +128,15 @@ Publications {data-icon=book}
 --------------------------------------------------------------------------------
 
 
-```{r}
-# TODO automate it
-# Load publications from ORCID
-#my_dois <- try(rorcid::identifiers(rorcid::works("0000-0003-0283-4570")))
-#pubs <- rcrossref::cr_cn(dois = my_dois, format = "text")
+```{r, warning = FALSE,message = FALSE}
+myORCID <- '0000-0003-0283-4570'
+underlineName <- 'Vieira, W.'
 
-# Add my name in bold and convert DOI in a link
-#fixedPubs <- lapply(pubs, editRefs)
+# get edited publications from ORCID id
+pubs <- get_publications(myORCID, underlineName)
 
-#print_section(position_data, 'training')
+print_publications(pubs)
 ```
-
-### Paying colonization credit with forest management could accelerate northward range shift of temperate trees
-
-In preparation <a href="https://github.com/willvieira/ms_STM-managed"><i class="fa fa-github"></i></a>
-
-N/A
-
-2020
-
-- <span style="text-decoration: underline;">Vieira W.</span>, Boulangeat, I., Brice M.H., Bradley, R., Gravel, D.
-
-
-
-### Moderate disturbances accelerate forest transition dynamics under climate change in the temperate–boreal ecotone of eastern North America
-
-Global Change Biology <a href="https://doi.org/10.1111%2Fgcb.15143"><i class="ai ai-doi"></i></a> <a href="https://github.com/mhBrice/transition"><i class="fa fa-github"></i></a>
-
-N/A
-
-2020
-
-- Brice M.H., Vissault S., <span style="text-decoration: underline;">Vieira W.</span>, Gravel, D., Legendre, P., Fortin, M.J.
 
 
 Selected Talks and Posters {data-icon=chalkboard-teacher}
