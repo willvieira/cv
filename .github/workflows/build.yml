@@ -54,6 +54,8 @@ jobs:
 
       - name: Build html
         run: Rscript -e "rmarkdown::render('index.Rmd')"
+        env:
+          ORCID_TOKEN: ${{ secrets.ORCID_TOKEN }}
 
       - name: Build pdf
         run: Rscript -e "pagedown::chrome_print(input = 'index.html', output = 'index.pdf')"
