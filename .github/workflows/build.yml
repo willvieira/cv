@@ -58,7 +58,7 @@ jobs:
           ORCID_TOKEN: ${{ secrets.ORCID_TOKEN }}
 
       - name: Build pdf
-        run: Rscript -e "pagedown::chrome_print(input = 'index.html', output = 'index.pdf')"
+        run: Rscript -e "pagedown::chrome_print(input = 'index.html', output = 'index.pdf', wait = 5)"
 
       - name: Prepare deployment
         run: |
