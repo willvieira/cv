@@ -50,10 +50,12 @@ jobs:
           sudo apt-get install libmagick++-dev
 
       - name: Install R dependencies
-        run: Rscript -e "install.packages(c('glue', 'tidyverse', 'readr', 'rmarkdown', 'pagedown', 'rorcid', 'rcrossref'))"
+        run: Rscript -e "install.packages(c('RefManageR', 'glue', 'tidyverse', 'readr', 'rmarkdown', 'pagedown', 'rorcid', 'rcrossref'))"
 
       - name: Build html
         run: Rscript -e "rmarkdown::render('index.Rmd')"
+        env:
+          ORCID_TOKEN: ${{ secrets.ORCID_TOKEN }}
 
       - name: Build pdf
         run: Rscript -e "pagedown::chrome_print(input = 'index.html', output = 'index.pdf')"
