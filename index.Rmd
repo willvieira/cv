@@ -6,6 +6,8 @@ output:
   pagedown::html_resume:
     css: ['css/styles.css', 'resume', 'https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css']
     self_contained: true
+    includes: 
+      after_body: "assets/preloader.js"
 ---
 
 ```{r, include=FALSE, cache = F}
@@ -26,6 +28,10 @@ source('R/parsing_functions.R')
 # Load csv with position info
 position_data <- readr::read_csv('data/positions.csv')
 ```
+
+<!-- Preload divs -->
+<div id="overlay"></div>
+<div id="spinner"></div>
 
 
 Aside
@@ -59,7 +65,7 @@ Programming skills
 
 <span style="font-weight:600;">Web</span>: HTML/CSS, ShinyApp<br>
 
-<span style="font-weight:600;">Dev (CI/CD)</span>: Git, Docker, Travis, GitHub Actions, AppVeyor
+<span style="font-weight:600;">DevOps (CI/CD)</span>: Git, Docker, Travis, GitHub Actions, AppVeyor
 
 
 Languages
