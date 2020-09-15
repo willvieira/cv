@@ -97,26 +97,28 @@ print_section <- function(position_data, section_id){
 get_publications <- function(ORCID, underlineName)
 {
     # retrieve publication list from ORCID
-    my_dois <- rorcid::identifiers(rorcid::works(ORCID))
-    pubs <- RefManageR::ReadCrossRef(my_dois)
+    my_dois <- unique(rorcid::identifiers(rorcid::works(ORCID)))
+    my_pubs <- rcrossref::cr_cn(my_dois, format = 'citeproc-json')
 
     # For each pub, organize title, journal, year, authors, and DOI
     editedPubs <- list()
-    for(pub in pubs)
-    {
-        # First get initials of given names
-        Given <- sapply(pub$author$given, strsplit, '-')
-        Given <- lapply(Given, function(x) {paste(paste0(substring(x, 1, 1), '.'), collapse = '')})
-        
-        # Merge with family name
-        authors <- paste(pub$author$family, Given, sep = ', ')
+    for(pub in my_pubs)
+    {  
+      # First get initials of given names
+      Given <- gsub(' ', '‐', pub$author$given)
+      Given <- strsplit(Given, '‐')
+      Given <- lapply(Given, function(x) {paste(paste0(substring(x, 1, 1), '.'), collapse = '')})
+      
+      # Merge with family name
+      familyName <- paste0(toupper(substr(pub$author$family, 1, 1)), tolower(substr(pub$author$family, 2, nchar(pub$author$family))))
+      authors <- paste(familyName, Given, sep = ', ')
 
-        # format my name to underlined
-        authors <- gsub(underlineName, paste0('<span style="text-decoration: underline;">', underlineName, '</span>'), authors)
-        
-        # add to main list
-        editedPubs[[pub$doi]] <- list(title = pub$title, journal = pub$journal, year = pub$year, authors = paste0(authors, collapse = ', '), doi = pub$url)
-                
+      # format my name to underlined
+      authors <- gsub(underlineName, paste0('<span style="text-decoration: underline;">', underlineName, '</span>'), authors)
+      
+      # add to main list
+      editedPubs[[pub$DOI]] <- list(title = pub$title, journal = pub[['container-title']], year = pub[['issued']][[1]][1], authors = paste0(authors, collapse = ', '), doi = pub$URL)
+              
     }
     
     return( editedPubs )
