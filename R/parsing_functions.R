@@ -132,13 +132,14 @@ print_publications <- function(pubs)
       glue::glue('
               ### {pub$title}
               \n
-              {pub$journal} <a href="pub$doi"><i class="ai ai-doi"></i></a>
+              {pub$journal} <a href="{pub$doi}" target="_blank"><i class="ai ai-doi"></i></a>
               \n
               N/A
               \n
               {pub$year}
               \n
-              - {pub$authors}'
+              - {pub$authors}
+              \n'
       )
     )
   }
