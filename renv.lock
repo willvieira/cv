@@ -319,10 +319,10 @@
     },
     "data.table": {
       "Package": "data.table",
-      "Version": "1.14.3",
+      "Version": "1.14.8",
       "Source": "Repository",
       "Repository": "CRAN",
-      "Hash": "e63c54686ffaa3e3421aaa9c3a2a9ee7",
+      "Hash": "b4c06e554f33344e044ccd7fdca750a9",
       "Requirements": []
     },
     "dbplyr": {
