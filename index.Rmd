@@ -29,11 +29,6 @@ source('R/parsing_functions.R')
 position_data <- readr::read_csv('data/positions.csv')
 ```
 
-<!-- Preload divs -->
-<div id="overlay"></div>
-<div id="spinner"></div>
-
-
 Aside
 ================================================================================
 
@@ -61,11 +56,11 @@ Programming skills
 
 <span style="font-weight:600;">Data base</span>: SQLite<br>
 
-<span style="font-weight:600;">Automation/reports</span>: <br>markdown, pandoc,<br>LateX, bash, makefile<br> 
+<span style="font-weight:600;">Automation/reports</span>: <br>markdown, pandoc, Quarto,<br>LateX, bash, makefile<br> 
 
 <span style="font-weight:600;">Web</span>: HTML/CSS, ShinyApp<br>
 
-<span style="font-weight:600;">DevOps (CI/CD)</span>: Git, Docker, Travis, GitHub Actions, AppVeyor
+<span style="font-weight:600;">DevOps (CI/CD)</span>: Git, Docker, GitHub Actions
 
 
 Languages
@@ -73,7 +68,7 @@ Languages
 
 **Portuguese**<span style="font-size:11px;"> Native</span><br>
 **French**<span style="font-size:11px;"> Full Professional</span><br>
-**English**<span style="font-size:11px;"> Professional</span><br>
+**English**<span style="font-size:11px;"> Full Professional</span><br>
 
 
 Disclaimer {#disclaimer}
@@ -105,6 +100,12 @@ Education {data-icon=graduation-cap data-concise=true}
 print_section(position_data, 'education')
 ```
 
+Consulting Experience {data-icon=briefcase}
+--------------------------------------------------------------------------------
+
+```{r}
+print_section(position_data, 'consult_positions')
+```
 
 
 Research Experience {data-icon=laptop}
@@ -133,6 +134,15 @@ print_section(position_data, 'training')
 Publications {data-icon=book}
 --------------------------------------------------------------------------------
 
+### Paying colonization credit with forest management could accelerate the range shift of temperate trees under climate change
+
+Under review. Preprint hosted on <a href="https://willvieira.github.io/ms_STM-managed/" target="_blank"><i class="fa fa-github"></i></a>
+
+N/A
+
+2023
+
+<span style="text-decoration: underline;">Vieira, W.</span>, Boulangeat, I., Brice, M.H., Bradley, R.L., Gravel, D.
 
 ```{r, warning = FALSE,message = FALSE}
 myORCID <- '0000-0003-0283-4570'
