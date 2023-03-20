@@ -1,7 +1,6 @@
 :root {
-  --sidebar-width: 11.5rem;
+  --sidebar-width: 2rem;
 }
-
 [data-id="main"] {
   padding-top: 0px;
   padding-right: 16px;
@@ -10,19 +9,16 @@
   font-size: 0.8rem;
   float: left;
 }
-
 h1 {
   text-transform: capitalize;
   color: rgb(32, 53, 104);
   font-weight: 600;
 }
-
 .aside h2 {
   font-weight: 500;
   font-size: 1rem;
   color: rgb(32, 53, 104);
 }
-
 .aside {
   background-color: rgb(255, 227, 200);
   padding-top: 0px;
@@ -33,7 +29,6 @@ h1 {
   float: left;
   float: left;
 }
-
 [data-id="disclaimer"] {
   position: absolute;
   bottom: 0;
@@ -46,32 +41,23 @@ h1 {
   margin-right: -15px;
   text-align: left;
 }
-
 a {
   color: rgb(211, 88, 49);
-
 }
-
 .aside .level2 {
   margin-top: 0.3in;
 }
-
-.pagedjs_page:first-of-type {
+.pagedjs_first_page {
   --sidebar-background-color: rgb(255, 227, 200);
+  --sidebar-width: 11.5rem;
+  --main-width: calc(var(--content-width) - var(--sidebar-width)) !important;
+  --pagedjs-margin-top: 0.5in !important;
 }
-
-.pagedjs_page:not(:first-of-type) {
-  --sidebar-background-color: rgb(255, 227, 200);
-  --sidebar-width: 2rem;
-  --main-width: calc(var(--content-width) - var(--sidebar-width));
-  --pagedjs-margin-top: 0.5in;
-}
-
 .pagedjs_page {
   --pagedjs-margin-right: 0.25in;
-  --pagedjs-margin-top: 0.7in;
+  --pagedjs-margin-top: 0.1in;
+  --sidebar-background-color: rgb(255, 227, 200);
 }
-
 #overlay {
   display: block;
   position: fixed;
@@ -83,7 +69,6 @@ a {
   z-index: 100;
   background: #ffffff;
 }
-
 #spinner {
   display: block;
   position: fixed;
@@ -95,17 +80,14 @@ a {
   margin-left: -20px;
   z-index: 101;
   background-color: #3498db;
-
   -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
   animation: sk-rotateplane 1.2s infinite ease-in-out;
 }
-
 @-webkit-keyframes sk-rotateplane {
   0% { -webkit-transform: perspective(120px) }
   50% { -webkit-transform: perspective(120px) rotateY(180deg) }
   100% { -webkit-transform: perspective(120px) rotateY(180deg)  rotateX(180deg) }
 }
-
 @keyframes sk-rotateplane {
   0% {
       transform: perspective(120px) rotateX(0deg) rotateY(0deg);
