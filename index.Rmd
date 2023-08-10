@@ -7,7 +7,7 @@ output:
     css: ['css/styles.css', 'resume', 'https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css']
     self_contained: true
     includes: 
-      after_body: ["assets/preloader.js", "assets/google-analytics.js"]
+      after_body: ["assets/google-analytics.js"]
 ---
 
 ```{r, include=FALSE, cache = F}
@@ -38,21 +38,20 @@ Contact {#contact}
 - <i class="fa fa-envelope"></i> w.vieiraw@gmail.com
 - <i class="fa fa-twitter"></i> [WillVieira90](https://twitter.com/willvieira90)
 - <i class="fa fa-github"></i> [WillVieira](https://github.com/willvieira)
-- <i class="fa fa-globe"></i> [willvieira.github.io/](https://willvieira.github.io/)
-- <i class="ai ai-google-scholar"></i> [Publications](https://scholar.google.com/citations?user=GyChlIoAAAAJ&hl=en)
+<!-- - <i class="fa fa-globe"></i> [willvieira.github.io/](https://willvieira.github.io/) -->
 - <i class="ai ai-orcid"></i> [0000-0003-0283-4570](https://orcid.org/0000-0003-0283-4570)
+- <i class="ai ai-google-scholar"></i> [Publications](https://scholar.google.com/citations?user=GyChlIoAAAAJ&hl=en)
 
 
 Quantitative skills
 ------------------------------------
 
-Regression, Mathematical modelling, Random Forest, Hierarchical models, Bayesian statistics
-
+Bayesian statistics, Hierarchical models, Random Forest, Mathematical modelling, Regression
 
 Programming skills
 ------------------------------------
 
-<span style="font-weight:600;">Data analysis</span>: <br>R, Python, Stan, HPC<br>
+<span style="font-weight:600;">Data analysis</span>: <br>R, Python, Stan, HPC, QGIS<br>
 
 <span style="font-weight:600;">Data base</span>: SQLite<br>
 
@@ -60,7 +59,7 @@ Programming skills
 
 <span style="font-weight:600;">Web</span>: HTML/CSS, ShinyApp<br>
 
-<span style="font-weight:600;">DevOps (CI/CD)</span>: Git, Docker, GitHub Actions
+<span style="font-weight:600;">DevOps (CI/CD)</span>: Git, GitHub, Docker, GitHub Actions
 
 
 Languages

@@ -22,7 +22,7 @@ h1 {
 .aside {
   background-color: rgb(255, 227, 200);
   padding-top: 0px;
-  padding-right: 7px;
+  padding-right: 0px;
   padding-bottom: 0px;
   padding-left: 15px;
   font-size: 0.8rem;
@@ -38,7 +38,7 @@ h1 {
   line-height: 1;
   color: #777;
   padding-left: 15px;
-  margin-right: -15px;
+  margin-right: -26px;
   text-align: left;
 }
 a {
@@ -49,12 +49,13 @@ a {
 }
 .pagedjs_first_page {
   --sidebar-background-color: rgb(255, 227, 200);
-  --sidebar-width: 11.5rem;
+  --sidebar-width: 11rem;
+  --pagedjs-margin-bottom: 0.5in !important;
   --main-width: calc(var(--content-width) - var(--sidebar-width)) !important;
   --pagedjs-margin-top: 0.5in !important;
 }
 .pagedjs_page {
-  --pagedjs-margin-right: 0.25in;
+  --pagedjs-margin-right: 0.25in !important;
   --pagedjs-margin-top: 0.1in;
   --sidebar-background-color: rgb(255, 227, 200);
 }
