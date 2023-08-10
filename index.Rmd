@@ -55,7 +55,7 @@ Programming skills
 
 <span style="font-weight:600;">Data base</span>: SQLite<br>
 
-<span style="font-weight:600;">Automation/reports</span>: <br>markdown, pandoc, Quarto,<br>LateX, bash, makefile<br> 
+<span style="font-weight:600;">Automation/reports</span>: <br>markdown, pandoc, Quarto,<br>LateX, bash, GNU make<br> 
 
 <span style="font-weight:600;">Web</span>: HTML/CSS, ShinyApp<br>
 
@@ -89,7 +89,15 @@ Main
 --------------------------------------------------------------------------------
 
 
-<span style="font-size: 1rem;">< <i class="fa fa-chart-bar"></i> + <i class="fa fa-robot"></i> >  Quantitative ecologist | I like to automate everything </span>
+<span style="font-size: 1rem;">< <i class="fa fa-chart-bar"></i> + <i class="fa fa-robot"></i> >  Quantitative ecologist | I like to automate stuff</span>
+
+
+Consulting Experience {data-icon=briefcase}
+--------------------------------------------------------------------------------
+
+```{r}
+print_section(position_data, 'consult_positions')
+```
 
 
 Education {data-icon=graduation-cap data-concise=true}
@@ -97,13 +105,6 @@ Education {data-icon=graduation-cap data-concise=true}
 
 ```{r}
 print_section(position_data, 'education')
-```
-
-Consulting Experience {data-icon=briefcase}
---------------------------------------------------------------------------------
-
-```{r}
-print_section(position_data, 'consult_positions')
 ```
 
 
