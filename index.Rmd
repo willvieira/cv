@@ -43,7 +43,7 @@ Contact {#contact}
 - <i class="ai ai-google-scholar"></i> [Publications](https://scholar.google.com/citations?user=GyChlIoAAAAJ&hl=en)
 
 
-Quantitative skills
+Quantitative/<br>data analysis
 ------------------------------------
 
 Bayesian statistics, Hierarchical models, Random Forest, Mathematical modelling, Regression
@@ -89,7 +89,7 @@ Main
 --------------------------------------------------------------------------------
 
 
-<span style="font-size: 1rem;">< <i class="fa fa-chart-bar"></i> + <i class="fa fa-robot"></i> >  Quantitative ecologist | I like to automate stuff</span>
+<span style="font-size: 1rem;">< <i class="fa fa-chart-bar"></i> + <i class="fa fa-robot"></i> >  Quantitative ecologist | I love to automate stuff</span>
 
 
 Consulting Experience {data-icon=briefcase}
@@ -100,7 +100,7 @@ print_section(position_data, 'consult_positions')
 ```
 
 
-Education {data-icon=graduation-cap data-concise=true}
+Education {data-icon=graduation-cap}
 --------------------------------------------------------------------------------
 
 ```{r}
@@ -116,13 +116,6 @@ print_section(position_data, 'research_positions')
 ```
 
 
-Teaching Experience {data-icon=chalkboard-teacher}
---------------------------------------------------------------------------------
-
-```{r}
-print_section(position_data, 'teaching_positions')
-```
-
 Training {data-icon=certificate}
 --------------------------------------------------------------------------------
 
@@ -130,34 +123,17 @@ Training {data-icon=certificate}
 print_section(position_data, 'training')
 ```
 
-
-Publications {data-icon=book}
---------------------------------------------------------------------------------
-
-### Paying colonization credit with forest management could accelerate the range shift of temperate trees under climate change
-
-Under review. Preprint hosted on <a href="https://willvieira.github.io/ms_STM-managed/" target="_blank"><i class="fa fa-github"></i></a>
-
-N/A
-
-2023
-
-<span style="text-decoration: underline;">Vieira, W.</span>, Boulangeat, I., Brice, M.H., Bradley, R.L., Gravel, D.
-
-```{r, warning = FALSE,message = FALSE}
-myORCID <- '0000-0003-0283-4570'
-underlineName <- 'Vieira, W.'
-
-# get edited publications from ORCID id
-pubs <- get_publications(myORCID, underlineName)
-
-print_publications(pubs)
-```
-
-
-Selected Talks and Posters {data-icon=chalkboard-teacher}
+Teaching Experience {data-icon=chalkboard-teacher}
 --------------------------------------------------------------------------------
 
 ```{r}
-print_section(position_data, 'talk_poster')
+print_section(position_data, 'teaching_positions')
 ```
+
+
+Publications, talks, and posters {data-icon=book}
+--------------------------------------------------------------------------------
+
+###
+
+A list of my publications can be found [here](https://scholar.google.com/citations?user=GyChlIoAAAAJ&hl=pt-BR). In this [talk](https://willvieira.github.io/talk_biodiversityModeling2019/#1) I present the R package from my model, and this [talk](https://willvieira.github.io/talk_STM-QCBS2018/#1) I present the results. [Here](https://doc.ielab.usherbrooke.ca/index.php/s/mLZetyMpl2Jdc0g) and [here](https://doc.ielab.usherbrooke.ca/index.php/s/1CEtQkOasDS1MSQ) are two selected posters.

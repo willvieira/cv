@@ -50,13 +50,14 @@ a {
 .pagedjs_first_page {
   --sidebar-background-color: rgb(255, 227, 200);
   --sidebar-width: 11rem;
-  --pagedjs-margin-bottom: 0.5in !important;
+  --pagedjs-margin-bottom: 0.5in;
   --main-width: calc(var(--content-width) - var(--sidebar-width)) !important;
   --pagedjs-margin-top: 0.5in !important;
 }
 .pagedjs_page {
-  --pagedjs-margin-right: 0.25in !important;
+  --pagedjs-margin-right: 0.20in !important;
   --pagedjs-margin-top: 0.1in;
+  --pagedjs-margin-bottom: 0in;
   --sidebar-background-color: rgb(255, 227, 200);
 }
 #overlay {
