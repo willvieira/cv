@@ -89,7 +89,7 @@ Main
 --------------------------------------------------------------------------------
 
 
-<span style="font-size: 1rem;">< <i class="fa fa-chart-bar"></i> + <i class="fa fa-robot"></i> >  Quantitative ecologist | I like to automate everything </span>
+<span style="font-size: 1rem;">< <i class="fa fa-chart-bar"></i> + <i class="fa fa-robot"></i> >  Quantitative ecologist | I love to automate stuff </span>
 
 
 Education {data-icon=graduation-cap data-concise=true}
