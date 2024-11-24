@@ -134,16 +134,6 @@ print_section(position_data, 'training')
 Publications {data-icon=book}
 --------------------------------------------------------------------------------
 
-### Paying colonization credit with forest management could accelerate the range shift of temperate trees under climate change
-
-Under review. Preprint hosted on <a href="https://willvieira.github.io/ms_STM-managed/" target="_blank"><i class="fa fa-github"></i></a>
-
-N/A
-
-2023
-
-<span style="text-decoration: underline;">Vieira, W.</span>, Boulangeat, I., Brice, M.H., Bradley, R.L., Gravel, D.
-
 ```{r, warning = FALSE,message = FALSE}
 myORCID <- '0000-0003-0283-4570'
 underlineName <- 'Vieira, W.'
