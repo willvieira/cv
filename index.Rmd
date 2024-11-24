@@ -8,7 +8,6 @@ output:
     self_contained: true
     includes: 
       after_body: ["assets/google-analytics.js"]
-    header-includes: <link rel="icon" href="data:;base64,iVBORw0KGgo=">
 ---
 
 ```{r, include=FALSE, cache = F}
