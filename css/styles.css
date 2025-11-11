@@ -1,5 +1,8 @@
 :root {
   --sidebar-width: 2rem;
+  --title-color: rgb(112, 59, 59);
+  --aside-color: rgb(238 224 200);
+  --link-color: rgb(211, 88, 49);
 }
 [data-id="main"] {
   padding-top: 0px;
@@ -11,16 +14,16 @@
 }
 h1 {
   text-transform: capitalize;
-  color: rgb(32, 53, 104);
+  color: var(--title-color);
   font-weight: 600;
 }
 .aside h2 {
   font-weight: 500;
   font-size: 1rem;
-  color: rgb(32, 53, 104);
+  color: var(--title-color);
 }
 .aside {
-  background-color: rgb(255, 227, 200);
+  background-color: var(--aside-color);
   padding-top: 0px;
   padding-right: 0px;
   padding-bottom: 0px;
@@ -42,13 +45,13 @@ h1 {
   text-align: left;
 }
 a {
-  color: rgb(211, 88, 49);
+  color: var(--link-color);
 }
 .aside .level2 {
   margin-top: 0.3in;
 }
 .pagedjs_first_page {
-  --sidebar-background-color: rgb(255, 227, 200);
+  --sidebar-background-color: var(--aside-color);
   --sidebar-width: 11rem;
   --pagedjs-margin-bottom: 0.5in !important;
   --main-width: calc(var(--content-width) - var(--sidebar-width)) !important;
@@ -57,7 +60,7 @@ a {
 .pagedjs_page {
   --pagedjs-margin-right: 0.25in !important;
   --pagedjs-margin-top: 0.1in;
-  --sidebar-background-color: rgb(255, 227, 200);
+  --sidebar-background-color: var(--aside-color);
 }
 #overlay {
   display: block;
