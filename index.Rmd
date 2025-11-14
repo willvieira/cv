@@ -36,22 +36,23 @@ Contact {#contact}
 --------------------------------------------------------------------------------
 
 - <i class="fa fa-envelope"></i> w.vieiraw@gmail.com
-- <i class="fa fa-twitter"></i> [WillVieira90](https://twitter.com/willvieira90)
-- <i class="fa fa-github"></i> [WillVieira](https://github.com/willvieira)
+<!-- - <i class="fa fa-twitter"></i> [WillVieira90](https://twitter.com/willvieira90) -->
+- <i class="fa fa-linkedin"></i> [Linkedin/WillVieira](www.linkedin.com/in/willvieira90)
+- <i class="fa fa-github"></i> [GitHub/WillVieira](https://github.com/willvieira)
 <!-- - <i class="fa fa-globe"></i> [willvieira.github.io/](https://willvieira.github.io/) -->
-- <i class="ai ai-orcid"></i> [0000-0003-0283-4570](https://orcid.org/0000-0003-0283-4570)
+<!-- - <i class="ai ai-orcid"></i> [0000-0003-0283-4570](https://orcid.org/0000-0003-0283-4570) -->
 - <i class="ai ai-google-scholar"></i> [Publications](https://scholar.google.com/citations?user=GyChlIoAAAAJ&hl=en)
 
 
-Quantitative skills
+Quantitative
 ------------------------------------
 
 Bayesian statistics, Hierarchical models, Random Forest, Mathematical modelling, Regression
 
-Programming skills
+Dev stack
 ------------------------------------
 
-<span style="font-weight:600;">Data analysis</span>: <br>R, Python, Stan, HPC, QGIS<br>
+<span style="font-weight:600;">Data analysis</span>: <br>R, Python, Julia, Stan, HPC<br>
 
 <span style="font-weight:600;">Data base</span>: SQLite<br>
 
@@ -73,39 +74,39 @@ Languages
 Disclaimer {#disclaimer}
 --------------------------------------------------------------------------------
 
-Made with [**pagedown**](https://github.com/rstudio/pagedown).
-
 The source code is available at [github.com/willvieira/cv](https://github.com/willvieira/cv).
 
 Last updated on `r Sys.Date()`.
 
-[<i class='fas fa-download'></i> Download a PDF of this CV](https://willvieira.github.io/cv/WillianVieira.pdf)
+[<i class='fas fa-download'></i> Download the PDF version](https://willvieira.github.io/cv/WillianVieira.pdf)
 
 
 Main
 ================================================================================
 
- <span style="font-weight:600">Willian Vieira</span> <span style="font-size: 13px;">PhD candidate</span>{#title}
+<span style="font-weight:600">Willian Vieira</span> <span style="font-size: 15px;">PhD</span>{#title}
 --------------------------------------------------------------------------------
 
+<p style="text-align:justify;margin-top: 6px; margin-bottom: 0;">
+  Trained as a quantitative ecologist, I learned to make sense of messy, complex natural systems. There, I immersed myself in statistics to tell compelling stories with incomplete data, accounting for uncertainty and bias every step of the way.
+</p>
+<p style="text-align:justify;margin-top: 5px;margin-bottom: 0;">
+  Now I channel that same scientific rigor into full-stack data engineering, building reproducible and automated data pipelines designed to scale. My mission is to make data accessible and actionable for everyone, from scientists to executives.
+</p>
 
-<span style="font-size: 1rem;">< <i class="fa fa-chart-bar"></i> + <i class="fa fa-robot"></i> >  Quantitative ecologist | I love to automate stuff </span>
+Experience {data-icon=briefcase}
+--------------------------------------------------------------------------------
 
+```{r}
+print_section(position_data, 'experience')
+```
 
-Education {data-icon=graduation-cap data-concise=true}
+Education {data-icon=graduation-cap}
 --------------------------------------------------------------------------------
 
 ```{r}
 print_section(position_data, 'education')
 ```
-
-Consulting Experience {data-icon=briefcase}
---------------------------------------------------------------------------------
-
-```{r}
-print_section(position_data, 'consult_positions')
-```
-
 
 Research Experience {data-icon=laptop}
 --------------------------------------------------------------------------------
