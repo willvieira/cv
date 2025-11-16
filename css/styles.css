@@ -12,15 +12,35 @@
   font-size: 0.8rem;
   float: left;
 }
+[data-id="title"] {
+  margin-bottom: 0.15in;
+}
 h1 {
   text-transform: capitalize;
   color: var(--title-color);
   font-weight: 600;
 }
+[data-id="main"] h2::after {
+    height: calc(var(--row-blocks-padding-top) * 1.2);
+}
+.aside h2 + p {
+  margin-top: 0.3em !important;
+}
+[data-id="contact"] ul {
+    font-weight: 200;
+    line-height: 1.5;
+}
+[data-id="skills"] {
+    line-height: 1.2;
+}
 .aside h2 {
   font-weight: 500;
   font-size: 1rem;
+  margin-bottom: 0;
   color: var(--title-color);
+}
+.date{
+  font-size: 0.8em;
 }
 .aside {
   background-color: var(--aside-color);
@@ -48,7 +68,7 @@ a {
   color: var(--link-color);
 }
 .aside .level2 {
-  margin-top: 0.3in;
+  margin-top: 0.1in;
 }
 .pagedjs_first_page {
   --sidebar-background-color: var(--aside-color);

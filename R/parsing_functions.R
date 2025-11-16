@@ -65,6 +65,12 @@ print_section <- function(position_data, section_id){
     ungroup() %>% 
     filter(description_num == 'description_1') %>% 
     mutate(
+      start = ifelse(
+        !is.na(time_obs),
+        # glue('{start}<br>({time_obs})'),
+        glue('{start}<br>({time_obs})'),
+        start
+      ),
       timeline = ifelse(
         is.na(start) | start == end,
         end,
@@ -73,7 +79,7 @@ print_section <- function(position_data, section_id){
       description_bullets = ifelse(
         no_descriptions,
         ' ',
-        map_chr(descriptions, ~paste('-', ., collapse = '\n'))
+        map_chr(descriptions, ~paste('', ., collapse = '\n'))
       )
     ) %>% 
     strip_links_from_cols(c('title', 'description_bullets')) %>% 
@@ -81,9 +87,9 @@ print_section <- function(position_data, section_id){
     glue_data(
       "### {title}",
       "\n\n",
-      "{loc}",
-      "\n\n",
       "{institution}",
+      "\n\n",
+      "{loc}",
       "\n\n",
       "{timeline}",
       "\n\n",
