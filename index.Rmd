@@ -35,6 +35,7 @@ Aside
 Contact {#contact}
 --------------------------------------------------------------------------------
 
+- <i class="fa  fa-phone"></i> (263) 381-3636
 - <i class="fa fa-envelope"></i> w.vieiraw@gmail.com
 <!-- - <i class="fa fa-twitter"></i> [WillVieira90](https://twitter.com/willvieira90) -->
 - <i class="fa fa-linkedin"></i> [Linkedin/WillVieira](www.linkedin.com/in/willvieira90)
@@ -43,25 +44,43 @@ Contact {#contact}
 <!-- - <i class="ai ai-orcid"></i> [0000-0003-0283-4570](https://orcid.org/0000-0003-0283-4570) -->
 - <i class="ai ai-google-scholar"></i> [Publications](https://scholar.google.com/citations?user=GyChlIoAAAAJ&hl=en)
 
+<p style="margin-top: 0; margin-bottom: 1;font-size: 0.2rem;">
+<br>
+</p>
 
-Quantitative
+Skills
 ------------------------------------
 
-Bayesian statistics, Hierarchical models, Random Forest, Mathematical modelling, Regression
+<span style="font-weight:600;">Statistical</span>: <br>
+Bayesian inference · Machine learning · Spatial modelling · Regression and classification
 
-Dev stack
+<span style="font-weight:600;">Programming</span>: <br>
+R · Python · Julia · Stan · SQL · Bash · Make
+
+<span style="font-weight:600;">Geospatial Infrastructure</span>: <br>
+ETL/ELT · Apache Arrow · Cloud-optimized data storage and streaming (Azure, AWS S3) · HPC
+
+<span style="font-weight:600;">Automation</span>: <br>
+Quarto · R Markdown · Jupyter · Pandoc · LaTeX
+
+<span style="font-weight:600;">DevOps & Deployment</span>: <br>
+Git · GitHub · CI/CD pipelines · Docker
+
+<span style="font-weight:600;">Web & Interactive Tools</span>: <br>
+HTML/CSS · Shiny
+
+<p style="margin-top: 0; margin-bottom: 1;font-size: 0.2rem;">
+<br>
+</p>
+
+Comm. Outputs
 ------------------------------------
 
-<span style="font-weight:600;">Data analysis</span>: <br>R, Python, Julia, Stan, HPC<br>
+Teaching, presenting, and writing for technical and non-technical audiences · 5 published papers and preprints (EcoLog, Preprint) · Selected talks (), posters (), and workshops ()
 
-<span style="font-weight:600;">Data base</span>: SQLite<br>
-
-<span style="font-weight:600;">Automation/reports</span>: <br>markdown, pandoc, Quarto,<br>LateX, bash, makefile<br> 
-
-<span style="font-weight:600;">Web</span>: HTML/CSS, ShinyApp<br>
-
-<span style="font-weight:600;">DevOps (CI/CD)</span>: Git, GitHub, Docker, GitHub Actions
-
+<p style="margin-top: 0; margin-bottom: 1;font-size: 0.2rem;">
+<br>
+</p>
 
 Languages
 ------------------------------------
@@ -87,11 +106,10 @@ Main
 <span style="font-weight:600">Willian Vieira</span> <span style="font-size: 15px;">PhD</span>{#title}
 --------------------------------------------------------------------------------
 
-<p style="text-align:justify;margin-top: 6px; margin-bottom: 0;">
-  Trained as a quantitative ecologist, I learned to make sense of messy, complex natural systems. There, I immersed myself in statistics to tell compelling stories with incomplete data, accounting for uncertainty and bias every step of the way.
-</p>
-<p style="text-align:justify;margin-top: 5px;margin-bottom: 0;">
-  Now I channel that same scientific rigor into full-stack data engineering, building reproducible and automated data pipelines designed to scale. My mission is to make data accessible and actionable for everyone, from scientists to executives.
+<p style="text-align:justify;margin-top: 4px; margin-bottom: 0;">
+  Trained as a quantitative ecologist, I learned to work with complex, uncertain spatial data and pull out the signals that matter.
+  I apply statistical modelling, Bayesian inference, and machine learning to turn imperfect data into actionable insights, paired with data-engineering experience building automated, scalable pipelines.
+  My mission is to make data reliable, accessible, and genuinely useful for the people who rely on it.
 </p>
 
 Experience {data-icon=briefcase}
