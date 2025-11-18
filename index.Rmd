@@ -107,7 +107,7 @@ Main
 --------------------------------------------------------------------------------
 
 <p style="text-align:justify;margin-top: 4px; margin-bottom: 0;">
-  Quantitative ecologist specialized in extracting signal from messy, uncertain geospatial data. I combine Bayesian and machine learning models with data engineering practices to build automated, and scalable pipelines. I focus on making complex datasets reliable, accessible, and directly usable in decision-making.
+  Data scientist with a PhD in quantitative ecology, trained to extract signal from messy and uncertain spatial data. I combine Bayesian and machine learning models with data engineering practices to build automated, scalable pipelines. I focus on making complex datasets reliable, accessible, and directly usable in decision-making.
 </p>
 
 Experience {data-icon=briefcase}
