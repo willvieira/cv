@@ -52,31 +52,31 @@ Skills
 ------------------------------------
 
 <span style="font-weight:600;">Statistical</span>: <br>
-Bayesian inference · Machine learning · Spatial modelling · Regression and classification
+Bayesian inference · Hierarchical models · Random forest · Experimental design
 
 <span style="font-weight:600;">Programming</span>: <br>
-R · Python · Julia · Stan · SQL · Bash · Make
+R · Python · Julia · Stan · SQL  · duckDB · Bash
 
-<span style="font-weight:600;">Geospatial Infrastructure</span>: <br>
-ETL/ELT · Apache Arrow · Cloud-optimized data storage and streaming (Azure, AWS S3) · HPC
+<span style="font-weight:600;">Data Engineering</span>: <br>
+ETL/ELT · Apache Arrow · Cloud-optimized data (Parquet, COG) · Azure (Blob, Databricks) · HPC
 
-<span style="font-weight:600;">Automation</span>: <br>
-Quarto · R Markdown · Jupyter · Pandoc · LaTeX
+<span style="font-weight:600;">Reproducibily</span>: <br>
+Quarto · Markdown · Jupyter · Pandoc · LaTeX · Make
 
-<span style="font-weight:600;">DevOps & Deployment</span>: <br>
-Git · GitHub · CI/CD pipelines · Docker
+<span style="font-weight:600;">DevOps</span>: <br>
+Git · GitHub · CI/CD pipelines · Docker · automated testing
 
 <span style="font-weight:600;">Web & Interactive Tools</span>: <br>
-HTML/CSS · Shiny
+HTML/CSS · Shiny · API design basics
 
 <p style="margin-top: 0; margin-bottom: 1;font-size: 0.2rem;">
 <br>
 </p>
 
-Comm. Outputs
+Outreach
 ------------------------------------
 
-Teaching, presenting, and writing for technical and non-technical audiences · 5 published papers and preprints (EcoLog, Preprint) · Selected talks (), posters (), and workshops ()
+· Developed and maintained the [QCBS R Workshop Series](https://r.qcbs.ca/), reaching nearly one thousand graduate students · [5 published](https://scholar.google.com/citations?user=GyChlIoAAAAJ&hl=en) papers & preprints with ~100 citations · Translated client needs into technical analyses and delivered clear, actionable results
 
 <p style="margin-top: 0; margin-bottom: 1;font-size: 0.2rem;">
 <br>
@@ -93,11 +93,11 @@ Languages
 Disclaimer {#disclaimer}
 --------------------------------------------------------------------------------
 
-The source code is available at [github.com/willvieira/cv](https://github.com/willvieira/cv).
+CV source code hosted on [<i class='fa fa-github'></i> ](https://github.com/willvieira/cv)
 
-Last updated on `r Sys.Date()`.
+Last updated: `r Sys.Date()`
 
-[<i class='fas fa-download'></i> Download the PDF version](https://willvieira.github.io/cv/WillianVieira.pdf)
+[<i class='fas fa-download'></i> PDF download available](https://willvieira.github.io/cv/WillianVieira.pdf)
 
 
 Main
@@ -107,9 +107,7 @@ Main
 --------------------------------------------------------------------------------
 
 <p style="text-align:justify;margin-top: 4px; margin-bottom: 0;">
-  Trained as a quantitative ecologist, I learned to work with complex, uncertain spatial data and pull out the signals that matter.
-  I apply statistical modelling, Bayesian inference, and machine learning to turn imperfect data into actionable insights, paired with data-engineering experience building automated, scalable pipelines.
-  My mission is to make data reliable, accessible, and genuinely useful for the people who rely on it.
+  Quantitative ecologist specialized in extracting signal from messy, uncertain geospatial data. I combine Bayesian and machine learning models with data engineering practices to build automated, and scalable pipelines. I focus on making complex datasets reliable, accessible, and directly usable in decision-making.
 </p>
 
 Experience {data-icon=briefcase}
@@ -125,34 +123,34 @@ Education {data-icon=graduation-cap}
 ```{r}
 print_section(position_data, 'education')
 ```
-
+<!-- 
 Research Experience {data-icon=laptop}
---------------------------------------------------------------------------------
+-------------------------------------------------------------------------------- -->
 
-```{r}
+```{r,eval=FALSE}
 print_section(position_data, 'research_positions')
 ```
 
-
+<!-- 
 Teaching Experience {data-icon=chalkboard-teacher}
---------------------------------------------------------------------------------
+-------------------------------------------------------------------------------- -->
 
-```{r}
+```{r,eval=FALSE}
 print_section(position_data, 'teaching_positions')
 ```
-
+<!-- 
 Training {data-icon=certificate}
---------------------------------------------------------------------------------
+-------------------------------------------------------------------------------- -->
 
-```{r}
+```{r,eval=FALSE}
 print_section(position_data, 'training')
 ```
 
-
+<!-- 
 Publications {data-icon=book}
---------------------------------------------------------------------------------
+-------------------------------------------------------------------------------- -->
 
-```{r, warning = FALSE,message = FALSE}
+```{r,eval=FALSE, warning = FALSE,message = FALSE}
 myORCID <- '0000-0003-0283-4570'
 underlineName <- 'Vieira, W.'
 
@@ -162,10 +160,10 @@ pubs <- get_publications(myORCID, underlineName)
 print_publications(pubs)
 ```
 
-
+<!-- 
 Selected Talks and Posters {data-icon=chalkboard-teacher}
---------------------------------------------------------------------------------
+-------------------------------------------------------------------------------- -->
 
-```{r}
+```{r,eval=FALSE}
 print_section(position_data, 'talk_poster')
 ```

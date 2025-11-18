@@ -9,7 +9,7 @@
   padding-right: 16px;
   padding-bottom: 0px;
   padding-left: 0px;
-  font-size: 0.8rem;
+  font-size: 0.82rem;
   float: left;
 }
 [data-id="title"] {
@@ -40,7 +40,7 @@ h1 {
   color: var(--title-color);
 }
 .date{
-  font-size: 0.8em;
+  font-size: 0.78em;
 }
 .aside {
   background-color: var(--aside-color);
@@ -48,20 +48,19 @@ h1 {
   padding-right: 0px;
   padding-bottom: 0px;
   padding-left: 15px;
-  font-size: 0.8rem;
-  float: left;
+  font-size: 0.78rem;
   float: left;
 }
 [data-id="disclaimer"] {
   position: absolute;
-  bottom: 0;
+  bottom: -25px;
   right: var(--sidebar-horizontal-padding);
   font-size: 0.75rem;
   font-style: italic;
-  line-height: 1;
+  line-height: 0;
   color: #777;
   padding-left: 15px;
-  margin-right: -26px;
+  margin-right: -17px;
   text-align: left;
 }
 a {
