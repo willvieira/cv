@@ -85,9 +85,9 @@ Outreach
 Languages
 ------------------------------------
 
-**Portuguese**<span style="font-size:11px;"> Native</span><br>
-**French**<span style="font-size:11px;"> Full Professional</span><br>
-**English**<span style="font-size:11px;"> Full Professional</span><br>
+**Portuguese**<span style="font-size:11px;"> · Native</span><br>
+**French**<span style="font-size:11px;"> · Full Professional</span><br>
+**English**<span style="font-size:11px;"> · Full Professional</span><br>
 
 
 Disclaimer {#disclaimer}
@@ -107,7 +107,7 @@ Main
 --------------------------------------------------------------------------------
 
 <p style="text-align:justify;margin-top: 4px; margin-bottom: 0;">
-  Data scientist with a PhD in quantitative ecology who learned to extract signal from messy, uncertain spatial data. I combine Bayesian and machine learning statistics with data engineering practices to build automated, reproducible, and scalable pipelines. My work focuses on making complex datasets reliable, accessible, and genuinely useful for the people who rely on them.
+  Data scientist with a PhD in quantitative ecology who learned to extract signal from messy, uncertain spatial data. I combine Bayesian and machine learning statistics with data engineering practices to build automated, reproducible, and scalable pipelines. My work focuses on making complex datasets reliable, accessible, and directly usable in decision-making.
 </p>
 
 Experience {data-icon=briefcase}
