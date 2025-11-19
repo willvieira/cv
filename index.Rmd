@@ -64,7 +64,7 @@ ETL/ELT · Apache Arrow · Cloud-optimized data (Parquet, COG) · Azure (Blob, D
 Quarto · Markdown · Jupyter · Pandoc · LaTeX · Make
 
 <span style="font-weight:600;">DevOps</span>: <br>
-Git · GitHub · CI/CD pipelines · Docker · automated testing
+Unix · Git · GitHub · CI/CD pipelines · Docker · automated testing
 
 <span style="font-weight:600;">Web & Interactive Tools</span>: <br>
 HTML/CSS · Shiny · API design basics
@@ -107,7 +107,7 @@ Main
 --------------------------------------------------------------------------------
 
 <p style="text-align:justify;margin-top: 4px; margin-bottom: 0;">
-  Data scientist with a PhD in quantitative ecology, trained to extract signal from messy and uncertain spatial data. I combine Bayesian and machine learning models with data engineering practices to build automated, scalable pipelines. I focus on making complex datasets reliable, accessible, and directly usable in decision-making.
+  Data scientist with a PhD in quantitative ecology who learned to extract signal from messy, uncertain spatial data. I combine Bayesian and machine learning statistics with data engineering practices to build automated, reproducible, and scalable pipelines. My work focuses on making complex datasets reliable, accessible, and genuinely useful for the people who rely on them.
 </p>
 
 Experience {data-icon=briefcase}
