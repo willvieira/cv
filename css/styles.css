@@ -6,7 +6,7 @@
 }
 [data-id="main"] {
   padding-top: 0px;
-  padding-right: 16px;
+  padding-right: 12px;
   padding-bottom: 0px;
   padding-left: 0px;
   font-size: 0.82rem;
@@ -53,7 +53,7 @@ h1 {
 }
 [data-id="disclaimer"] {
   position: absolute;
-  bottom: -25px;
+  bottom: 22px;
   right: var(--sidebar-horizontal-padding);
   font-size: 0.75rem;
   font-style: italic;
@@ -72,7 +72,7 @@ a {
 .pagedjs_first_page {
   --sidebar-background-color: var(--aside-color);
   --sidebar-width: 11rem;
-  --pagedjs-margin-bottom: 0.5in !important;
+  --pagedjs-margin-bottom: 0in !important;
   --main-width: calc(var(--content-width) - var(--sidebar-width)) !important;
   --pagedjs-margin-top: 0.5in !important;
 }
