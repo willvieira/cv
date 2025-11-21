@@ -64,7 +64,7 @@ ETL/ELT · Apache Arrow · Cloud-optimized data (Parquet, COG) · Azure (Blob, D
 Quarto · Markdown · Jupyter · Pandoc · LaTeX · Make
 
 <span style="font-weight:600;">DevOps</span>: <br>
-Unix · Git · GitHub · CI/CD pipelines · Docker · automated testing
+Unix · Git · GitHub · CI/CD pipelines · Docker · Unit testing
 
 <span style="font-weight:600;">Web & Interactive Tools</span>: <br>
 HTML/CSS · Shiny · API design basics
