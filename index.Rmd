@@ -51,23 +51,17 @@ Contact {#contact}
 Skills
 ------------------------------------
 
-<span style="font-weight:600;">Statistical</span>: <br>
-Bayesian inference · Hierarchical models · Random forest · Experimental design
+<span style="font-weight:600;">Data Engineering & Cloud</span>: <br>
+ETL/ELT · Azure · AWS · Docker · Apache Arrow · Airflow & DBT · COG · GeoParquet · HPC
 
-<span style="font-weight:600;">Programming</span>: <br>
-R · Python · Julia · Stan · SQL  · duckDB · Bash
+<span style="font-weight:600;">Programming & Database</span>: <br>
+Python · R · Julia · DuckDB · PostGIS · Bash
 
-<span style="font-weight:600;">Data Engineering</span>: <br>
-ETL/ELT · Apache Arrow · Cloud-optimized data (Parquet, COG) · Azure (Blob, Databricks) · HPC
+<span style="font-weight:600;">DevOps & Workflow</span>: <br>
+Git · CI/CD · Unix · Unit testing · Make · Quarto · Jupyter
 
-<span style="font-weight:600;">Reproducibily</span>: <br>
-Quarto · Markdown · Jupyter · Pandoc · LaTeX · Make
-
-<span style="font-weight:600;">DevOps</span>: <br>
-Unix · Git · GitHub · CI/CD pipelines · Docker · Unit testing
-
-<span style="font-weight:600;">Web & Interactive Tools</span>: <br>
-HTML/CSS · Shiny · API design basics
+<span style="font-weight:600;">Statistics & Modelling</span>: <br>
+Bayesian inference · Machine Learning · Hierarchical models · Experimental design
 
 <p style="margin-top: 0; margin-bottom: 1;font-size: 0.2rem;">
 <br>
@@ -108,10 +102,10 @@ Main
 --------------------------------------------------------------------------------
 
 <p style="text-align:justify;margin-top: 4px; margin-bottom: 0;">
-  Data scientist combining machine learning, Bayesian inference, and cloud-oriented data engineering to deliver reliable analytical pipelines at scale.
+  Geospatial Data Engineer & Scientist with a PhD in Ecology, integrating AI/ML and cloud-native data engineering to build scalable, automated pipelines for environmental impact.
 </p>
 
-Data Science Experience {data-icon=briefcase}
+Data Science & Engineer Experience {data-icon=briefcase}
 --------------------------------------------------------------------------------
 
 ```{r}
