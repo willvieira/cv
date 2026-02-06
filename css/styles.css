@@ -1,5 +1,5 @@
 :root {
-  --sidebar-width: 2rem;
+  --sidebar-width: 2rem;                                                  
   --title-color: rgb(112, 59, 59);
   --aside-color: rgb(238 224 200);
   --link-color: rgb(211, 88, 49);
@@ -19,9 +19,6 @@ h1 {
   text-transform: capitalize;
   color: var(--title-color);
   font-weight: 600;
-}
-[data-id="main"] h2::after {
-    height: calc(var(--row-blocks-padding-top) * 1.2);
 }
 .aside h2 + p {
   margin-top: 0.3em !important;

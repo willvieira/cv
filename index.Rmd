@@ -76,7 +76,8 @@ HTML/CSS · Shiny · API design basics
 Outreach
 ------------------------------------
 
-· Developed and maintained the [QCBS R Workshop Series](https://r.qcbs.ca/), reaching nearly one thousand graduate students · [5 published](https://scholar.google.com/citations?user=GyChlIoAAAAJ&hl=en) papers & preprints with ~100 citations · Translated client needs into technical analyses and delivered clear, actionable results
+· Developed and maintained the [QCBS R Workshop Series](https://r.qcbs.ca/), reaching nearly one thousand graduate students · Taught +250 students across biology, engineering, and graduate programs (programming, statistics, ecology) · [5 published](https://scholar.google.com/citations?user=GyChlIoAAAAJ&hl=en) papers & preprints with ~100 citations
+· Translated client needs into technical analyses and delivered clear, actionable results
 
 <p style="margin-top: 0; margin-bottom: 1;font-size: 0.2rem;">
 <br>
@@ -107,10 +108,10 @@ Main
 --------------------------------------------------------------------------------
 
 <p style="text-align:justify;margin-top: 4px; margin-bottom: 0;">
-  Data scientist with a PhD in quantitative ecology who learned to extract signal from messy, uncertain spatial data. I combine Bayesian and machine learning statistics with data engineering practices to build automated, scalable pipelines. My focus is on making complex datasets reliable, accessible, and directly useful in decision-making.
+  Data scientist combining machine learning, Bayesian inference, and cloud-oriented data engineering to deliver reliable analytical pipelines at scale.
 </p>
 
-Experience {data-icon=briefcase}
+Data Science Experience {data-icon=briefcase}
 --------------------------------------------------------------------------------
 
 ```{r}
