@@ -102,7 +102,7 @@ Main
 --------------------------------------------------------------------------------
 
 <p style="text-align:justify;margin-top: 4px; margin-bottom: 0;">
-  Geospatial Data Engineer & Scientist with a PhD in Ecology, integrating AI/ML and cloud-native data engineering to build scalable, automated pipelines for environmental impact.
+  Geospatial Data Engineer & Scientist with a PhD in Ecology, I integrate AI/ML models with cloud-native data engineering to build scalable, automated pipelines for environmental impact.
 </p>
 
 Data Science & Engineer Experience {data-icon=briefcase}
