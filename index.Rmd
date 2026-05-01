@@ -52,13 +52,13 @@ Skills
 ------------------------------------
 
 <span style="font-weight:600;">Statistics & Modelling</span>: <br>
-Bayesian inference · Hierarchical models · Probabilistic modeling · Causal inference · Machine Learning · Spatial statistics · Experimental design
+Machine learning · Bayesian inference · Hierarchical models · Probabilistic modeling · Spatial statistics · Causal inference · Experimental design
 
 <span style="font-weight:600;">Programming & Database</span>: <br>
 R · Python · Stan · Julia · DuckDB · PostGIS · Bash · SQL
 
 <span style="font-weight:600;">Data Engineering & Cloud</span>: <br>
-ETL/ELT · Azure · AWS · Docker · Apache Arrow · Airflow & DBT · COG · GeoParquet · HPC
+ETL/ELT · Azure · AWS · Docker · Apache Arrow · Airflow & DBT · STAC · COG · GeoParquet · HPC · Remote sensing
 
 <span style="font-weight:600;">DevOps & Workflow</span>: <br>
 Git · CI/CD · Unix · Unit testing · Make · Quarto · Jupyter
@@ -102,7 +102,7 @@ Main
 --------------------------------------------------------------------------------
 
 <p style="text-align:justify;margin-top: 4px; margin-bottom: 0;">
-  Statistical Modeler and Data Engineer with a PhD in Ecology. I develop Bayesian hierarchical models of complex biological systems and build scalable data infrastructure to support them.
+  Statistical Modeler and Data Engineer with a PhD in Ecology. I build machine learning pipelines on large-scale geospatial and remote-sensing data — from probabilistic models to the production infrastructure that runs them.
 </p>
 
 Data Science & Engineer Experience {data-icon=briefcase}
