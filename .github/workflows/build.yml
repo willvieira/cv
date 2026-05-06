@@ -64,4 +64,4 @@ jobs:
           FOLDER: docs
           TARGET_FOLDER: ${{ steps.target.outputs.folder }}
           CLEAN: false
-          SINGLE_COMMIT: true
+          SINGLE_COMMIT: false
