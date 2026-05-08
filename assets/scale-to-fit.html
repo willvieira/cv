@@ -1,0 +1,47 @@
+<script>
+(function () {
+  var pages;
+
+  function scaleToFit() {
+    var page = document.querySelector('.pagedjs_page');
+    pages = document.querySelector('.pagedjs_pages');
+    if (!page || !pages || !page.offsetWidth) return;
+
+    var s = Math.min(
+      window.innerWidth / page.offsetWidth,
+      window.innerHeight / page.offsetHeight
+    );
+    var offsetX = (window.innerWidth - page.offsetWidth * s) / 2;
+    var offsetY = (window.innerHeight - page.offsetHeight * s) / 2;
+
+    pages.style.transform = 'scale(' + s + ')';
+    pages.style.transformOrigin = 'top left';
+    pages.style.position = 'fixed';
+    pages.style.top = offsetY + 'px';
+    pages.style.left = offsetX + 'px';
+  }
+
+  function resetForPrint() {
+    if (!pages) return;
+    pages.style.transform = '';
+    pages.style.transformOrigin = '';
+    pages.style.position = '';
+    pages.style.top = '';
+    pages.style.left = '';
+  }
+
+  function waitAndScale() {
+    var page = document.querySelector('.pagedjs_page');
+    if (page && page.offsetWidth > 0) {
+      scaleToFit();
+      window.addEventListener('resize', scaleToFit);
+    } else {
+      requestAnimationFrame(waitAndScale);
+    }
+  }
+
+  window.addEventListener('load', waitAndScale);
+  window.addEventListener('beforeprint', resetForPrint);
+  window.addEventListener('afterprint', scaleToFit);
+})();
+</script>

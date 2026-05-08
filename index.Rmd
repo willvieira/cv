@@ -7,7 +7,7 @@ output:
     css: ['css/styles.css', 'resume', 'https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css']
     self_contained: true
     includes: 
-      after_body: ["assets/google-analytics.js"]
+      after_body: ["assets/google-analytics.js", "assets/scale-to-fit.html"]
 ---
 
 ```{r, include=FALSE, cache = F}
