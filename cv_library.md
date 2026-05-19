@@ -123,7 +123,18 @@ All versions in reverse chronological order (newest first). The currently active
 ---
 
 **[master – current working tree]**
-> Geospatial data scientist with a PhD in quantitative ecology. I build machine learning and remote-sensing pipelines on large-scale, noisy, real-world data — from statistical modelling and satellite imagery processing to the production infrastructure that runs them.
+> Geospatial data engineer and scientific systems builder with a PhD in quantitative ecology. I turn complex environmental, satellite, and field data into reproducible pipelines, cloud data infrastructure, and decision-ready analytical systems that are traceable, validated, and robust under real-world constraints.
+
+---
+
+**[Shearwater tailoring — autonomous flight / geospatial systems]**
+- Geospatial data engineer and scientific systems builder
+- Complex environmental, satellite, and field data → reproducible pipelines and cloud data infrastructure
+- Decision-ready analytical systems that are traceable, validated, and robust under real-world constraints
+- Geospatial data infrastructure from scratch: lakehouse, internal API layers, repeatable access patterns
+- Multi-source geospatial data: environmental, satellite-derived, and client datasets
+- Balance performance, traceability, maintainability, and iteration speed in small-team infrastructure work
+- Honest transferable framing: geospatial infrastructure builder rather than aviation specialist
 
 ---
 

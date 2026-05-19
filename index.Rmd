@@ -52,16 +52,16 @@ Skills
 ------------------------------------
 
 <span style="font-weight:600;">Machine Learning & Statistics</span>: <br>
-Bayesian inference · Hierarchical models · Model evaluation · Error analysis · Uncertainty quantification · Forecasting · Feature engineering · Calibration
+Bayesian inference · Hierarchical models · Uncertainty quantification · Forecasting · Feature engineering
 
 <span style="font-weight:600;">Programming & Database</span>: <br>
-Python · R · SQL · PyTorch · Stan · DuckDB · Bash
+Python · R · SQL · Bash · DuckDB · Stan · Julia
 
 <span style="font-weight:600;">Data Engineering & Cloud</span>: <br>
-ETL/ELT · Production ML pipelines · Docker · Azure · AWS · Apache Arrow · HPC
+ETL/ELT · Cloud data infrastructure · APIs · Docker · Azure · AWS · GeoParquet · COGs · Apache Arrow · HPC
 
 <span style="font-weight:600;">DevOps & Reproducibility</span>: <br>
-Git · CI/CD · Unix · Unit testing · Reproducible pipelines · Automated validation · Make · Jupyter
+Git · CI/CD · Unix · Unit testing · Reproducible pipelines · Automated validation · Provenance · Make
 
 <p style="margin-top: 0; margin-bottom: 1;font-size: 0.2rem;">
 <br>
@@ -101,7 +101,7 @@ Main
 --------------------------------------------------------------------------------
 
 <p style="text-align:justify;margin-top: 4px; margin-bottom: 0;">
-  Data scientist and ML engineer with a PhD in quantitative ecology. I build reproducible machine learning pipelines on noisy, real-world data — from Bayesian and ML modelling to the production infrastructure that makes models traceable, monitored, and safe to deploy.
+  Geospatial data engineer with a PhD in quantitative ecology. I build reproducible pipelines and cloud data systems for complex environmental, satellite, and field data, with emphasis on traceability, validation, and real-world decisions.
 </p>
 
 Data Science & Engineer Experience {data-icon=briefcase}
