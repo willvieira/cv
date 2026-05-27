@@ -47,9 +47,9 @@ strip_links_from_cols <- function(data, cols_to_strip){
 # Take a position dataframe and the section id desired
 # and prints the section to markdown. 
 print_section <- function(position_data, section_id){
-  position_data %>% 
-    filter(section == section_id) %>% 
-    arrange(desc(end)) %>% 
+  position_data %>%
+    filter(section == section_id, in_resume) %>%
+    arrange(desc(end)) %>%
     mutate(id = 1:n()) %>% 
     pivot_longer(
       starts_with('description'),

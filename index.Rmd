@@ -51,17 +51,17 @@ Contact {#contact}
 Skills
 ------------------------------------
 
-<span style="font-weight:600;">ML & Statistics</span>: <br>
-Bayesian inference · Hierarchical models · Simulation modelling · Spatial modelling · Uncertainty quantification · Model evaluation
+<span style="font-weight:600;">Statistics & Modelling</span>: <br>
+Multi-level models · ANOVA · PCA & multivariate analysis · Bayesian hierarchical models · Simulation · Uncertainty quantification · Model evaluation
 
 <span style="font-weight:600;">Programming & Database</span>: <br>
-Python · R · SQL · Bash · DuckDB · Stan · Julia
+R · Python · Stan · SQL · Bash · DuckDB · Julia
 
-<span style="font-weight:600;">Data Engineering & Cloud</span>: <br>
-ETL/ELT · Geospatial data products · Cloud data infrastructure · APIs · Docker · Azure · AWS · GeoParquet · COGs · Apache Arrow · HPC
+<span style="font-weight:600;">Data Engineering</span>: <br>
+Package development · testthat · renv · R Markdown / Quarto · Shiny · Code review · Documentation · Reproducible pipelines
 
 <span style="font-weight:600;">DevOps & Reproducibility</span>: <br>
-Git · CI/CD · Unix · Unit testing · Reproducible pipelines · Automated validation · Metadata · Provenance · Make
+Git · CI/CD · Unix · Docker · HPC · Automated validation · Provenance · Make
 
 <p style="margin-top: 0; margin-bottom: 1;font-size: 0.2rem;">
 <br>
@@ -70,7 +70,7 @@ Git · CI/CD · Unix · Unit testing · Reproducible pipelines · Automated vali
 Outreach
 ------------------------------------
 
-· Developed and maintained the [QCBS R Workshop Series](https://r.qcbs.ca/), reaching nearly one thousand graduate students · Taught programming, statistics, and ecology to 250+ students across biology, engineering, and graduate programs · Published [5 papers & preprints](https://scholar.google.com/citations?user=GyChlIoAAAAJ&hl=en) with ~100 citations · Translated stakeholder needs into technical analyses, reproducible workflows, and clear analytical outputs
+· Developed and maintained the [QCBS R Workshop Series](https://r.qcbs.ca/), teaching R and statistics to nearly one thousand graduate students · Taught statistics, probability, and scientific programming to 250+ students across biology, engineering, and graduate programs · Published [5 papers & preprints](https://scholar.google.com/citations?user=GyChlIoAAAAJ&hl=en) with ~100 citations · Translated statistical methods into clear explanations and reproducible analyses for non-specialist audiences
 
 <p style="margin-top: 0; margin-bottom: 1;font-size: 0.2rem;">
 <br>
@@ -133,7 +133,7 @@ Main
 --------------------------------------------------------------------------------
 
 <p style="text-align:justify;margin-top: 4px; margin-bottom: 0;">
-  Geospatial machine learning engineer with a PhD in quantitative ecology. I build data systems that turn messy empirical data into reproducible simulations, transparent infrastructure, and decision-ready analytical products.
+  Applied statistician and R developer with a PhD in quantitative ecology. I take statistical methods from concept to R implementation to evaluation, turning them into reproducible analyses scientists can trust.
 </p>
 
 Data Science & Engineer Experience {data-icon=briefcase}
@@ -159,25 +159,45 @@ print_section(position_data, 'research_positions')
 ```
 
 
-<!-- Teaching Experience {data-icon=chalkboard-teacher}
--------------------------------------------------------------------------------- -->
+Teaching Experience {data-icon=chalkboard-teacher}
+--------------------------------------------------------------------------------
 
-```{r,eval=FALSE}
+```{r,eval=TRUE}
 print_section(position_data, 'teaching_positions')
 ```
 
-<!-- Training {data-icon=certificate}
--------------------------------------------------------------------------------- -->
+Training {data-icon=certificate}
+--------------------------------------------------------------------------------
 
-```{r,eval=FALSE}
+```{r,eval=TRUE}
 print_section(position_data, 'training')
 ```
 
-<!-- 
-Publications {data-icon=book}
--------------------------------------------------------------------------------- -->
 
-```{r,eval=FALSE, warning = FALSE,message = FALSE}
+Publications {data-icon=book}
+--------------------------------------------------------------------------------
+
+### Unifying individual and metapopulation scales with stochastic population models: the effect of climate and competition on tree range limits
+
+In production. Preprint hosted on <a href="https://willvieira.github.io/ms_forest-suitable-probability/" target="_blank"><i class="fa fa-github"></i></a>
+
+N/A
+
+2026
+
+<span style="text-decoration: underline;">Vieira, W.</span>, Gravel, D.       
+
+### Sensitivity of tree species demography to climate and competition across their range
+
+Under review. Preprint hosted on <a href="https://willvieira.github.io/ms_forest-ipm-sensitivity/" target="_blank"><i class="fa fa-github"></i></a>
+
+N/A
+
+2026
+
+<span style="text-decoration: underline;">Vieira, W.</span>, MacDonald, A., Gravel, D.       
+
+```{r,eval=TRUE, warning = FALSE,message = FALSE}
 myORCID <- '0000-0003-0283-4570'
 underlineName <- 'Vieira, W.'
 

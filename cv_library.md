@@ -122,7 +122,20 @@ All versions in reverse chronological order (newest first). The currently active
 
 ---
 
-**[master – current working tree / Epistemix tailoring — synthetic populations]**
+**[master – current working tree / BioRender tailoring — applied biostatistics / R]**
+> Applied statistician and R developer with a PhD in quantitative ecology. I take statistical methods from mathematical concept to R implementation to model evaluation, and turn them into reproducible, well-explained analyses that scientists can trust.
+
+Reusable BioRender positioning:
+- Lead with applied statistics, R, and scientific workflows — not infrastructure
+- Skills reordered: Statistics & Modelling first (linear models, ANOVA, PCA, Bayesian hierarchical, simulation, uncertainty, model evaluation)
+- R for Production category replaces Data Engineering & Cloud (package dev, testthat, renv, Quarto, code review)
+- PhD bullet leads with Bayesian/nonlinear stats, then open-source R packages, then methods book (math → R → evaluation), HPC and pipelines moved later
+- Habitat bullet leads with R/Python statistical pipelines + model validation/QA + stakeholder communication; cloud infrastructure demoted
+- Outreach line emphasizes statistics teaching and explaining methods to non-specialists
+
+---
+
+**[Epistemix tailoring — synthetic populations]**
 > Scientific systems builder with a PhD in quantitative ecology. I build population and geospatial data systems that turn messy empirical data into reproducible simulations, transparent infrastructure, and decision-ready analytical products.
 
 Reusable Epistemix positioning:
