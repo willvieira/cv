@@ -1,5 +1,9 @@
 name: Build and deploy
 
+concurrency:
+  group: gh-pages-deploy
+  cancel-in-progress: false
+
 on:
   push:
     branches:
