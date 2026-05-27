@@ -1,9 +1,18 @@
 <script>
 (function () {
   var pages;
+  var resizeAttached = false;
+  var observerAttached = false;
+  var scaleTimer;
+
+  function scheduleScale() {
+    clearTimeout(scaleTimer);
+    scaleTimer = setTimeout(scaleToFit, 50);
+  }
 
   function scaleToFit() {
     var page = document.querySelector('.pagedjs_page');
+    var pageList = document.querySelectorAll('.pagedjs_page');
     pages = document.querySelector('.pagedjs_pages');
     if (!page || !pages || !page.offsetWidth) return;
 
@@ -11,14 +20,21 @@
       window.innerWidth / page.offsetWidth,
       window.innerHeight / page.offsetHeight
     );
-    var offsetX = (window.innerWidth - page.offsetWidth * s) / 2;
-    var offsetY = (window.innerHeight - page.offsetHeight * s) / 2;
+    var offsetX = Math.max((window.innerWidth - page.offsetWidth * s) / 2, 0);
+    var offsetY = Math.max((window.innerHeight - page.offsetHeight * s) / 2, 0);
+    var hasMultiplePages = pageList.length > 1;
 
     pages.style.transform = 'scale(' + s + ')';
     pages.style.transformOrigin = 'top left';
-    pages.style.position = 'fixed';
+    pages.style.position = hasMultiplePages ? 'absolute' : 'fixed';
     pages.style.top = offsetY + 'px';
     pages.style.left = offsetX + 'px';
+
+    document.documentElement.style.overflow = hasMultiplePages ? 'auto' : 'hidden';
+    document.body.style.overflow = hasMultiplePages ? 'auto' : 'hidden';
+    document.body.style.minHeight = hasMultiplePages
+      ? (pages.offsetHeight * s + offsetY * 2) + 'px'
+      : '';
   }
 
   function resetForPrint() {
@@ -28,13 +44,29 @@
     pages.style.position = '';
     pages.style.top = '';
     pages.style.left = '';
+    document.documentElement.style.overflow = '';
+    document.body.style.overflow = '';
+    document.body.style.minHeight = '';
   }
 
   function waitAndScale() {
     var page = document.querySelector('.pagedjs_page');
-    if (page && page.offsetWidth > 0) {
+    pages = document.querySelector('.pagedjs_pages');
+    if (page && pages && page.offsetWidth > 0) {
       scaleToFit();
-      window.addEventListener('resize', scaleToFit);
+
+      if (!resizeAttached) {
+        window.addEventListener('resize', scheduleScale);
+        resizeAttached = true;
+      }
+
+      if (!observerAttached) {
+        new MutationObserver(scheduleScale).observe(pages, {
+          childList: true,
+          subtree: true
+        });
+        observerAttached = true;
+      }
     } else {
       requestAnimationFrame(waitAndScale);
     }
