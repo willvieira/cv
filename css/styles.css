@@ -65,13 +65,25 @@ h1 {
   position: absolute;
   bottom: 22px;
   right: var(--sidebar-horizontal-padding);
-  font-size: 0.75rem;
+  font-size: 0.65rem;
   font-style: italic;
-  line-height: 0;
+  line-height: 1.25;
   color: #777;
   padding-left: 15px;
   margin-right: -17px;
   text-align: left;
+}
+.cv-footer {
+  font-size: 0.67rem;
+  line-height: 1.5;
+  color: #777;
+}
+.cv-footer a {
+  color: #777;
+  text-decoration: none;
+}
+.cv-footer a:hover {
+  text-decoration: underline;
 }
 a {
   color: var(--link-color);

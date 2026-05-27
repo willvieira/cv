@@ -1,0 +1,6 @@
+# Application tag for local CV builds
+# Set to the git tag name used for the position, e.g. overstory, so the
+# rendered footer points to https://willvieira.github.io/cv/<tag>/
+# Leave empty for a root build with no /<tag>/ subfolder
+# In CI this file is ignored when env var CV_APP_TAG is set by the workflow
+epistemix

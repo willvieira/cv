@@ -87,11 +87,43 @@ Languages
 Disclaimer {#disclaimer}
 --------------------------------------------------------------------------------
 
-CV source code hosted on [<i class='fa fa-github'></i> ](https://github.com/willvieira/cv)
+```{r footer, results='asis'}
+# Resolve the application tag with precedence: env var > data/application_tag.txt > none
+app_tag <- trimws(Sys.getenv('CV_APP_TAG', unset = ''))
+if (!nzchar(app_tag)) {
+  tag_file <- 'data/application_tag.txt'
+  if (file.exists(tag_file)) {
+    lines <- readLines(tag_file, warn = FALSE)
+    lines <- trimws(lines)
+    lines <- lines[nzchar(lines) & !startsWith(lines, '#')]
+    if (length(lines)) app_tag <- lines[1]
+  }
+}
 
-Last updated: `r Sys.Date()`
+base_pages <- 'https://willvieira.github.io/cv'
+base_repo  <- 'https://github.com/willvieira/cv'
+if (nzchar(app_tag)) {
+  html_url   <- paste0(base_pages, '/', app_tag, '/index.html')
+  pdf_url    <- paste0(base_pages, '/', app_tag, '/WillianVieira.pdf')
+  source_url <- paste0(base_repo,  '/tree/', app_tag)
+} else {
+  html_url   <- paste0(base_pages, '/index.html')
+  pdf_url    <- paste0(base_pages, '/WillianVieira.pdf')
+  source_url <- base_repo
+}
 
-[<i class='fas fa-download'></i> PDF download available](https://willvieira.github.io/cv/WillianVieira.pdf)
+cat(sprintf(
+  paste0(
+    '<div class="cv-footer">',
+    '<a href="%s"><i class="fa fa-github"></i> Source</a> · ',
+    '<a href="%s"><i class="fa fa-globe"></i> HTML</a> · ',
+    '<a href="%s"><i class="fas fa-download"></i> PDF</a>  ',
+    'Updated %s',
+    '</div>'
+  ),
+  source_url, html_url, pdf_url, format(Sys.Date())
+))
+```
 
 
 Main
