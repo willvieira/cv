@@ -122,8 +122,15 @@ All versions in reverse chronological order (newest first). The currently active
 
 ---
 
-**[master – current working tree]**
-> Geospatial data engineer and scientific systems builder with a PhD in quantitative ecology. I turn complex environmental, satellite, and field data into reproducible pipelines, cloud data infrastructure, and decision-ready analytical systems that are traceable, validated, and robust under real-world constraints.
+**[master – current working tree / Epistemix tailoring — synthetic populations]**
+> Scientific systems builder with a PhD in quantitative ecology. I build population and geospatial data systems that turn messy empirical data into reproducible simulations, transparent infrastructure, and decision-ready analytical products.
+
+Reusable Epistemix positioning:
+- Population/environment systems builder rather than direct human synthetic-population specialist
+- Messy empirical data → simulation-ready population representations
+- Geospatial plausibility, metadata, provenance, and user trust in data products
+- STManaged / forest-community simulations as the “same structure, but for trees” bridge
+- Habitat cloud infrastructure as evidence for productized, traceable geospatial data systems
 
 ---
 
