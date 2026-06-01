@@ -122,7 +122,18 @@ All versions in reverse chronological order (newest first). The currently active
 
 ---
 
-**[master – current working tree / BioRender tailoring — applied biostatistics / R]**
+**[master – current working tree / inSileco tailoring — environmental data systems / honest extensive]**
+> Quantitative ecologist and data engineer with a PhD in ecology. I build statistical models, reproducible workflows, and environmental data infrastructure that turn complex biodiversity and geospatial data into analyses people can inspect, trust, and reuse.
+
+Reusable inSileco positioning:
+- Remove the separate Outreach aside when teaching/publication/outreach achievements are already explicit in experience, teaching, training, and publications sections
+- Expand skills toward environmental data systems rather than a narrow statistical-product role: ecological modelling, biodiversity monitoring, geospatial data, reproducible workflows, cloud-backed data access, metadata, and provenance
+- Habitat should be honest but compact: client statistical/spatial analysis, then analytical infrastructure ownership, cloud-backed heavy spatial data access, metadata/pipeline conventions, validation, documentation, reuse, and handoff
+- Avoid overclaiming Habitat as purely ML/platform work; present it as environmental consulting analysis that evolved into de facto analytical infrastructure and data engineering work
+
+---
+
+**[BioRender tailoring — applied biostatistics / R]**
 > Applied statistician and R developer with a PhD in quantitative ecology. I take statistical methods from mathematical concept to R implementation to model evaluation, and turn them into reproducible, well-explained analyses that scientists can trust.
 
 Reusable BioRender positioning:

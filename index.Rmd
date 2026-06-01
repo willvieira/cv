@@ -51,26 +51,17 @@ Contact {#contact}
 Skills
 ------------------------------------
 
-<span style="font-weight:600;">Statistics & Modelling</span>: <br>
-Multi-level models · ANOVA · PCA & multivariate analysis · Bayesian hierarchical models · Simulation · Uncertainty quantification · Model evaluation
+<span style="font-weight:600;">Statistics, Modelling & Ecology</span>: <br>
+Bayesian statistics · Nonlinear hierarchical models · SDMs · Sampling design · Spatial bias · Simulation · Sensitivity analysis · Uncertainty quantification · Model evaluation
 
-<span style="font-weight:600;">Programming & Database</span>: <br>
-R · Python · Stan · SQL · Bash · DuckDB · Julia
+<span style="font-weight:600;">Environmental & Geospatial Data</span>: <br>
+Biodiversity monitoring · Forest inventory data · Climate and remote-sensing covariates · Habitat and vegetation data · Environmental assessment support · Decision-ready maps and reports
 
-<span style="font-weight:600;">Data Engineering</span>: <br>
-Package development · testthat · renv · R Markdown / Quarto · Shiny · Code review · Documentation · Reproducible pipelines
+<span style="font-weight:600;">Programming & Scientific Software</span>: <br>
+R · Python · Stan · SQL · Bash · DuckDB · Julia · Package development · Shiny · Quarto
 
-<span style="font-weight:600;">DevOps & Reproducibility</span>: <br>
-Git · CI/CD · Unix · Docker · HPC · Automated validation · Provenance · Make
-
-<p style="margin-top: 0; margin-bottom: 1;font-size: 0.2rem;">
-<br>
-</p>
-
-Outreach
-------------------------------------
-
-· Developed and maintained the [QCBS R Workshop Series](https://r.qcbs.ca/), teaching R and statistics to nearly one thousand graduate students · Taught statistics, probability, and scientific programming to 250+ students across biology, engineering, and graduate programs · Published [5 papers & preprints](https://scholar.google.com/citations?user=GyChlIoAAAAJ&hl=en) with ~100 citations · Translated statistical methods into clear explanations and reproducible analyses for non-specialist audiences
+<span style="font-weight:600;">Data Engineering & Reproducibility</span>: <br>
+ETL pipelines · Metadata and data governance · Cloud object storage · Cloud-optimized geospatial access · Automated validation · Docker · CI/CD · Git · Unix · HPC · Make · Reproducibility
 
 <p style="margin-top: 0; margin-bottom: 1;font-size: 0.2rem;">
 <br>
@@ -133,7 +124,7 @@ Main
 --------------------------------------------------------------------------------
 
 <p style="text-align:justify;margin-top: 4px; margin-bottom: 0;">
-  Applied statistician and R developer with a PhD in quantitative ecology. I take statistical methods from concept to R implementation to evaluation, turning them into reproducible analyses scientists can trust.
+  PhD quantitative ecologist with data engineer experience. I build statistical models, reproducible workflows, and environmental data infrastructure that turn complex biodiversity and geospatial data into analyses people can inspect, trust, and reuse.
 </p>
 
 Data Science & Engineer Experience {data-icon=briefcase}
