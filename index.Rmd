@@ -52,13 +52,13 @@ Skills
 ------------------------------------
 
 <span style="font-weight:600;">Machine Learning & Statistics</span>: <br>
-Bayesian inference · Hierarchical models · Uncertainty quantification · Forecasting · Feature engineering
+Bayesian inference · Hierarchical models · Optimization · Model evaluation · Simulation · Feature engineering
 
 <span style="font-weight:600;">Programming & Database</span>: <br>
 Python · R · SQL · Bash · DuckDB · Stan · Julia
 
-<span style="font-weight:600;">Data Engineering & Cloud</span>: <br>
-ETL/ELT · Cloud data infrastructure · APIs · Docker · Azure · AWS · GeoParquet · COGs · Apache Arrow · HPC
+<span style="font-weight:600;">Production ML & Data Systems</span>: <br>
+Production ML pipelines · ETL/ELT · APIs · Docker · Azure · AWS · Apache Arrow · HPC
 
 <span style="font-weight:600;">DevOps & Reproducibility</span>: <br>
 Git · CI/CD · Unix · Unit testing · Reproducible pipelines · Automated validation · Provenance
@@ -70,7 +70,7 @@ Git · CI/CD · Unix · Unit testing · Reproducible pipelines · Automated vali
 Outreach
 ------------------------------------
 
-· Developed and maintained the [QCBS R Workshop Series](https://r.qcbs.ca/), reaching nearly one thousand graduate students · Taught programming, statistics, SQL, and reproducible workflows to 250+ students across biology, engineering, and graduate programs · Translated stakeholder needs into technical analyses, documented pipelines, and clear analytical outputs · Built reusable material that helped non-specialists understand data, assumptions, and results
+· Developed and maintained the [QCBS R Workshop Series](https://r.qcbs.ca/), reaching nearly one thousand graduate students · Taught programming, statistics, SQL, and reproducible workflows to 250+ students across biology, engineering, and graduate programs · Translated stakeholder needs into technical analyses, documented pipelines, and clear analytical outputs
 
 <p style="margin-top: 0; margin-bottom: 1;font-size: 0.2rem;">
 <br>
@@ -133,10 +133,10 @@ Main
 --------------------------------------------------------------------------------
 
 <p style="text-align:justify;margin-top: 4px; margin-bottom: 0;">
-  Data developer with a PhD in quantitative ecology. I build ETL pipelines, cloud data systems, and reproducible workflows that turn fragmented operational data into trusted, documented, and reusable analytics.
+  Applied ML scientist with a PhD in quantitative ecology. I build statistical models, production-minded ML pipelines, and reproducible systems that turn noisy historical data into validated algorithms and decisions people can trust.
 </p>
 
-Data Development & Analytics Experience {data-icon=briefcase}
+Data Science & Engineer Experience {data-icon=briefcase}
 --------------------------------------------------------------------------------
 
 ```{r}

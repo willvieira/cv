@@ -122,6 +122,18 @@ All versions in reverse chronological order (newest first). The currently active
 
 ---
 
+**[StackAdapt tailoring — applied ML scientist / algorithm iteration]**
+> Applied ML scientist with a PhD in quantitative ecology. I build statistical models, production-minded ML pipelines, and reproducible systems that turn noisy historical data into validated algorithms and decisions people can trust.
+
+Reusable StackAdapt positioning:
+- Lead with applied ML/statistical modeling, optimization-minded iteration, historical-data evaluation, and production-minded coding
+- Frame the domain gap honestly: not adtech experience, but the same technical pattern of noisy feedback data, measurable performance, model iteration, and implementation
+- Skills emphasize Bayesian/hierarchical models, optimization, model evaluation, simulation, feature engineering, Python/R, production ML pipelines, validation, provenance, and CI/testing
+- Habitat is the production bridge: R/Python analytical pipelines, validation, provenance, iterative data products, Unix/Docker/CI, and cloud-oriented infrastructure
+- PhD is the modeling bridge: Bayesian hierarchical models, simulations, model comparison/evaluation, HPC scaling, and reusable/open-source modeling code
+
+---
+
 **[master – current working tree / inSileco tailoring — environmental data systems / honest extensive]**
 > Quantitative ecologist and data engineer with a PhD in ecology. I build statistical models, reproducible workflows, and environmental data infrastructure that turn complex biodiversity and geospatial data into analyses people can inspect, trust, and reuse.
 
