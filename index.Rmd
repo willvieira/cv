@@ -51,17 +51,26 @@ Contact {#contact}
 Skills
 ------------------------------------
 
-<span style="font-weight:600;">Statistics, Modelling & Ecology</span>: <br>
-Bayesian statistics · Nonlinear hierarchical models · SDMs · Sampling design · Spatial bias · Simulation · Sensitivity analysis · Uncertainty quantification · Model evaluation
+<span style="font-weight:600;">Machine Learning & Statistics</span>: <br>
+Bayesian inference · Hierarchical models · Uncertainty quantification · Forecasting · Feature engineering
 
-<span style="font-weight:600;">Environmental & Geospatial Data</span>: <br>
-Biodiversity monitoring · Forest inventory data · Climate and remote-sensing covariates · Habitat and vegetation data · Environmental assessment support · Decision-ready maps and reports
+<span style="font-weight:600;">Programming & Database</span>: <br>
+Python · R · SQL · Bash · DuckDB · Stan · Julia
 
-<span style="font-weight:600;">Programming & Scientific Software</span>: <br>
-R · Python · Stan · SQL · Bash · DuckDB · Julia · Package development · Shiny · Quarto
+<span style="font-weight:600;">Data Engineering & Cloud</span>: <br>
+ETL/ELT · Cloud data infrastructure · APIs · Docker · Azure · AWS · GeoParquet · COGs · Apache Arrow · HPC
 
-<span style="font-weight:600;">Data Engineering & Reproducibility</span>: <br>
-ETL pipelines · Metadata and data governance · Cloud object storage · Cloud-optimized geospatial access · Automated validation · Docker · CI/CD · Git · Unix · HPC · Make · Reproducibility
+<span style="font-weight:600;">DevOps & Reproducibility</span>: <br>
+Git · CI/CD · Unix · Unit testing · Reproducible pipelines · Automated validation · Provenance
+
+<p style="margin-top: 0; margin-bottom: 1;font-size: 0.2rem;">
+<br>
+</p>
+
+Outreach
+------------------------------------
+
+· Developed and maintained the [QCBS R Workshop Series](https://r.qcbs.ca/), reaching nearly one thousand graduate students · Taught programming, statistics, SQL, and reproducible workflows to 250+ students across biology, engineering, and graduate programs · Translated stakeholder needs into technical analyses, documented pipelines, and clear analytical outputs · Built reusable material that helped non-specialists understand data, assumptions, and results
 
 <p style="margin-top: 0; margin-bottom: 1;font-size: 0.2rem;">
 <br>
@@ -124,10 +133,10 @@ Main
 --------------------------------------------------------------------------------
 
 <p style="text-align:justify;margin-top: 4px; margin-bottom: 0;">
-  PhD quantitative ecologist with data engineer experience. I build statistical models, reproducible workflows, and environmental data infrastructure that turn complex biodiversity and geospatial data into analyses people can inspect, trust, and reuse.
+  Data developer with a PhD in quantitative ecology. I build ETL pipelines, cloud data systems, and reproducible workflows that turn fragmented operational data into trusted, documented, and reusable analytics.
 </p>
 
-Data Science & Engineer Experience {data-icon=briefcase}
+Data Development & Analytics Experience {data-icon=briefcase}
 --------------------------------------------------------------------------------
 
 ```{r}
@@ -150,21 +159,21 @@ print_section(position_data, 'research_positions')
 ```
 
 
-Teaching Experience {data-icon=chalkboard-teacher}
---------------------------------------------------------------------------------
+<!-- Teaching Experience {data-icon=chalkboard-teacher}
+-------------------------------------------------------------------------------- -->
 
-```{r,eval=TRUE}
+```{r,eval=FALSE}
 print_section(position_data, 'teaching_positions')
 ```
 
-Training {data-icon=certificate}
---------------------------------------------------------------------------------
+<!-- Training {data-icon=certificate}
+-------------------------------------------------------------------------------- -->
 
-```{r,eval=TRUE}
+```{r,eval=FALSE}
 print_section(position_data, 'training')
 ```
 
-
+<!--
 Publications {data-icon=book}
 --------------------------------------------------------------------------------
 
@@ -188,7 +197,7 @@ N/A
 
 <span style="text-decoration: underline;">Vieira, W.</span>, MacDonald, A., Gravel, D.       
 
-```{r,eval=TRUE, warning = FALSE,message = FALSE}
+```{r,eval=FALSE, warning = FALSE,message = FALSE}
 myORCID <- '0000-0003-0283-4570'
 underlineName <- 'Vieira, W.'
 
@@ -197,6 +206,7 @@ pubs <- get_publications(myORCID, underlineName)
 
 print_publications(pubs)
 ```
+-->
 
 <!-- 
 Selected Talks and Posters {data-icon=chalkboard-teacher}

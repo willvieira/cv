@@ -133,6 +133,18 @@ Reusable inSileco positioning:
 
 ---
 
+**[Girl Guides of Canada tailoring — Data Developer / nonprofit data transformation]**
+> Data developer and scientific systems builder with a PhD in quantitative ecology. I build ETL pipelines, data models, and reproducible workflows that turn fragmented data into trusted, governed, and reusable analytical systems.
+
+Reusable Girl Guides positioning:
+- Lead with practical data infrastructure for digital transformation: ETL/ELT, SQL-oriented data modelling, data quality, validation/reconciliation, metadata, lineage, documentation, and governed reuse
+- Frame Habitat as the strongest bridge: a role that began as analysis and grew into de facto ownership of analytical infrastructure, pipeline conventions, validation, handoff, and reusable workflows
+- Keep Microsoft Fabric / Power BI honest: do not list as hands-on experience unless confirmed; use BI-ready datasets, reporting foundations, stakeholder translation, and rapid platform ramp-up instead
+- Preserve teaching/training sections for roles that value self-service analytics, data literacy, enablement, and communication with non-technical teams
+- Use Shearwater-style infrastructure ordering but translate away from geospatial/aviation toward operational data trust, governance, and organizational decision support
+
+---
+
 **[BioRender tailoring — applied biostatistics / R]**
 > Applied statistician and R developer with a PhD in quantitative ecology. I take statistical methods from mathematical concept to R implementation to model evaluation, and turn them into reproducible, well-explained analyses that scientists can trust.
 
