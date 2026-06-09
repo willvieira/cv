@@ -51,17 +51,17 @@ Contact {#contact}
 Skills
 ------------------------------------
 
-<span style="font-weight:600;">Machine Learning & Statistics</span>: <br>
-Bayesian inference · Hierarchical models · Optimization · Model evaluation · Simulation · Feature engineering
+<span style="font-weight:600;">Data Engineering & Analytics</span>: <br>
+Python · SQL · R · ETL/ELT · DuckDB · Data modelling · Transformations · Data quality
 
-<span style="font-weight:600;">Programming & Database</span>: <br>
-Python · R · SQL · Bash · DuckDB · Stan · Julia
+<span style="font-weight:600;">Scientific Modelling & Statistics</span>: <br>
+Bayesian inference · Hierarchical models · Simulation · Optimization · Model evaluation · Uncertainty
 
-<span style="font-weight:600;">Production ML & Data Systems</span>: <br>
-Production ML pipelines · ETL/ELT · APIs · Docker · Azure · AWS · Apache Arrow · HPC
+<span style="font-weight:600;">Production Data Systems</span>: <br>
+Reproducible pipelines · Workflow automation · APIs · Docker · Azure · AWS · Metadata · Provenance
 
-<span style="font-weight:600;">DevOps & Reproducibility</span>: <br>
-Git · CI/CD · Unix · Unit testing · Reproducible pipelines · Automated validation · Provenance
+<span style="font-weight:600;">DevOps & Collaboration</span>: <br>
+Git · CI/CD · Unix · Unit testing · Automated validation · Documentation · Stakeholder communication
 
 <p style="margin-top: 0; margin-bottom: 1;font-size: 0.2rem;">
 <br>
@@ -133,7 +133,7 @@ Main
 --------------------------------------------------------------------------------
 
 <p style="text-align:justify;margin-top: 4px; margin-bottom: 0;">
-  Applied ML scientist with a PhD in quantitative ecology. I build statistical models, production-minded ML pipelines, and reproducible systems that turn noisy historical data into validated algorithms and decisions people can trust.
+  Data engineer and scientific modelling specialist with a PhD in quantitative ecology. I build data workflows, ETL pipelines, and reproducible systems that turn messy, decision-critical data into validated, traceable outputs people can trust.
 </p>
 
 Data Science & Engineer Experience {data-icon=briefcase}

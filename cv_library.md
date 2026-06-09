@@ -122,6 +122,17 @@ All versions in reverse chronological order (newest first). The currently active
 
 ---
 
+**[Confluence tailoring — associate data engineer / investment data platform]**
+> Data engineer and scientific modelling specialist with a PhD in quantitative ecology. I build Python/SQL data workflows, ETL pipelines, and reproducible systems that turn messy, decision-critical data into validated, traceable outputs people can trust.
+
+Reusable Confluence positioning:
+- Lead with early-career data engineering fit: Python, SQL, ETL/ELT, transformations, data quality, data modelling, and code-first collaboration
+- Keep the finance-domain gap honest; frame investment data as a new domain but a familiar reliability/provenance problem
+- Emphasize Habitat as practical pipeline and analytical-infrastructure ownership: Python/R workflows, SQL-oriented modelling, validation, metadata, provenance, Docker/CI, documentation, and cloud/Azure-oriented storage
+- Do not claim Snowflake, Airflow, or financial-data production experience unless later confirmed; use transferable workflow automation, orchestration concepts, cloud/lakehouse-style infrastructure, and fast platform ramp-up instead
+
+---
+
 **[StackAdapt tailoring — applied ML scientist / algorithm iteration]**
 > Applied ML scientist with a PhD in quantitative ecology. I build statistical models, production-minded ML pipelines, and reproducible systems that turn noisy historical data into validated algorithms and decisions people can trust.
 
