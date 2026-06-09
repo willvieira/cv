@@ -122,6 +122,18 @@ All versions in reverse chronological order (newest first). The currently active
 
 ---
 
+**[ACF Associates tailoring — applied modelling / data systems / performance management]**
+> Applied modelling and data-systems specialist with a PhD in quantitative ecology. I build mathematical and statistical models, algorithms, and reproducible data workflows that turn complex real-world data into validated, explainable outputs for operational decisions.
+
+Reusable ACF Associates positioning:
+- Lead with thesis-level mathematical/statistical modelling, algorithmic assumptions, simulation, model validation, and rigorous communication
+- Keep the aerospace/defence gap honest; frame it as a new operational domain over a familiar pattern of complex systems, requirements, data processing, model assumptions, and decision support
+- Emphasize Python/R data processing, Pandas-adjacent workflows, SQL/relational-data reasoning, ETL, metadata/provenance, validation, and reproducible systems
+- ECCC is the client/government-facing bridge: requirements under operational constraints, sampling-protocol design, bias correction, and stakeholder-ready outputs
+- Habitat is the practical data-systems bridge: production-minded pipelines, metadata-driven ETL, validation, Docker/CI, documentation, and cloud/Azure-oriented infrastructure
+
+---
+
 **[Confluence tailoring — associate data engineer / investment data platform]**
 > Data engineer and scientific modelling specialist with a PhD in quantitative ecology. I build Python/SQL data workflows, ETL pipelines, and reproducible systems that turn messy, decision-critical data into validated, traceable outputs people can trust.
 
