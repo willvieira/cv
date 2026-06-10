@@ -122,6 +122,18 @@ All versions in reverse chronological order (newest first). The currently active
 
 ---
 
+**[COFOMO tailoring — data and modelling analyst / consulting decision support]**
+> Data and modelling analyst with a PhD in quantitative ecology. I turn messy operational data into explicit assumptions, statistical models, simulations, and traceable recommendations for decisions.
+
+Reusable COFOMO positioning:
+- Lead with applied statistics and modelling judgment: regression, Bayesian/hierarchical models, Monte Carlo-style simulation, uncertainty, validation, and clear limitations
+- Use ECCC as the consulting/government bridge: translating operational constraints into sampling design, spatial bias correction, and stakeholder-ready recommendations
+- Use Habitat as the enterprise-data bridge: ETL, data modelling, metadata/provenance, validation, documentation, and reproducible analytical infrastructure
+- Mention current AI/geospatial consulting work as evidence of active modelling practice, while keeping the focus on data handling, validation, assumptions, and practical interpretation
+- Keep Power BI honest: do not list it as hands-on unless confirmed; frame reporting tools as a quick ramp-up area supported by reproducible reporting and decision-support outputs
+
+---
+
 **[ACF Associates tailoring — applied modelling / data systems / performance management]**
 > Applied modelling and data-systems specialist with a PhD in quantitative ecology. I build mathematical and statistical models, algorithms, and reproducible data workflows that turn complex real-world data into validated, explainable outputs for operational decisions.
 
