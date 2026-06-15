@@ -122,6 +122,18 @@ All versions in reverse chronological order (newest first). The currently active
 
 ---
 
+**[Xposure Music tailoring — data analyst / catalog valuation]**
+> Data analyst and modelling specialist with a PhD in quantitative ecology. I turn messy multi-source data into validated datasets, statistical or ML models, reproducible reports, and production-ready pipelines for clear operational decisions.
+
+Reusable Xposure Music positioning:
+- Lead with careful data cleaning, source reconciliation, statistical modelling, predictive modelling, reporting, and decision support
+- Frame music catalog valuation as a familiar technical pattern: messy historical signals, gaps, anomalies, uncertainty, and the need for clear analytical stories
+- Keep Power BI and direct royalty/investment experience honest; emphasize BI-ready reporting, Python/R visualization, SQL-oriented reasoning, and fast domain ramp-up
+- Use Habitat for production-ready pipelines, validation, metadata/provenance, automated reporting, and reusable analytical infrastructure
+- Use PhD research for PhD-level statistics, noisy historical datasets, model validation, reproducible reporting, and attention to assumptions
+
+---
+
 **[COFOMO tailoring — data and modelling analyst / consulting decision support]**
 > Data and modelling analyst with a PhD in quantitative ecology. I turn messy operational data into explicit assumptions, statistical models, simulations, and traceable recommendations for decisions.
 
