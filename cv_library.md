@@ -122,6 +122,18 @@ All versions in reverse chronological order (newest first). The currently active
 
 ---
 
+**[Full CV — master root build / broad data science]**
+> Data scientist with a PhD in quantitative ecology. I build statistical and machine learning models, and the reproducible data pipelines behind them, that turn complex, noisy data into validated, explainable results people can use to decide.
+
+Full CV positioning:
+- Untagged builds add publications, teaching, talks, and training (research positions stay in the CSV but are not shown); tag builds keep experience and education only
+- Experience is short bullets only (one per `description_*` column), no bolded leads
+- Lead with data science over software engineering: statistical/ML modelling, validation, uncertainty, and the pipelines that feed them
+- inSileco (Data Scientist, 2026–present): owns the inSileCloud backend; contributes to (does not own) the Dagster pipelines and the AI-assisted workflow framework. Keep that distinction
+- Habitat uses the honest data-analyst framing: statistical/ML and spatial analysis first, then pipelines and analytical-infrastructure lead
+
+---
+
 **[Xposure Music tailoring — data analyst / catalog valuation]**
 > Data analyst and modelling specialist with a PhD in quantitative ecology. I turn messy multi-source data into validated datasets, statistical or ML models, reproducible reports, and production-ready pipelines for clear operational decisions.
 

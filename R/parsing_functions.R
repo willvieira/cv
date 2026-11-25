@@ -46,10 +46,11 @@ strip_links_from_cols <- function(data, cols_to_strip){
 
 # Take a position dataframe and the section id desired
 # and prints the section to markdown. 
-print_section <- function(position_data, section_id){
+print_section <- function(position_data, section_id, bullets = FALSE){
   position_data %>%
     filter(section == section_id, in_resume) %>%
-    arrange(desc(end)) %>%
+    # Ongoing positions ('Present') go first, then by end year
+    arrange(desc(end %in% 'Present'), desc(end)) %>%
     mutate(id = 1:n()) %>% 
     pivot_longer(
       starts_with('description'),
@@ -79,7 +80,8 @@ print_section <- function(position_data, section_id){
       description_bullets = ifelse(
         no_descriptions,
         ' ',
-        map_chr(descriptions, ~paste('', ., collapse = '\n'))
+        # bullets: one list item per description column; otherwise one line each
+        map_chr(descriptions, ~if (bullets) paste0('- ', ., collapse = '\n') else paste('', ., collapse = '<br>\n'))
       )
     ) %>% 
     strip_links_from_cols(c('title', 'description_bullets')) %>% 

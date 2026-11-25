@@ -7,7 +7,7 @@ output:
     css: ['css/styles.css', 'resume', 'https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css']
     self_contained: true
     includes: 
-      after_body: ["assets/google-analytics.js", "assets/scale-to-fit.html"]
+      after_body: ["assets/google-analytics.js", "assets/keep-entries.html", "assets/scale-to-fit.html"]
 ---
 
 ```{r, include=FALSE, cache = F}
@@ -27,6 +27,29 @@ source('R/parsing_functions.R')
 
 # Load csv with position info
 position_data <- readr::read_csv('data/positions.csv')
+
+# Resolve the application tag with precedence: env var > data/application_tag.txt > none
+# In CI only the env var counts, so master builds stay untagged whatever the file says
+app_tag <- trimws(Sys.getenv('CV_APP_TAG', unset = ''))
+if (!nzchar(app_tag) && Sys.getenv('GITHUB_ACTIONS') != 'true') {
+  tag_file <- 'data/application_tag.txt'
+  if (file.exists(tag_file)) {
+    lines <- readLines(tag_file, warn = FALSE)
+    lines <- trimws(lines)
+    lines <- lines[nzchar(lines) & !startsWith(lines, '#')]
+    if (length(lines)) app_tag <- lines[1]
+  }
+}
+
+# Untagged (root) builds are the full CV; application builds keep the short layout
+FULL_CV <- !nzchar(app_tag)
+
+# Print a section (header + entries) only in the full CV
+print_full_section <- function(position_data, section_id, title, icon) {
+  if (!FULL_CV) return(invisible())
+  cat(sprintf('\n\n%s {data-icon=%s}\n%s\n\n', title, icon, strrep('-', 80)))
+  print(print_section(position_data, section_id))
+}
 ```
 
 Aside
@@ -51,26 +74,17 @@ Contact {#contact}
 Skills
 ------------------------------------
 
-<span style="font-weight:600;">Statistics & Decision Analytics</span>: <br>
-Regression · Bayesian inference · Hierarchical models · Predictive modelling · Model validation · Uncertainty · Anomaly investigation
+<span style="font-weight:600;">Statistics & Machine Learning</span>: <br>
+Regression · Classification · Bayesian inference · Hierarchical models · Spatial statistics · Predictive modelling · Simulation · Sampling design · Sensitivity analysis · Uncertainty quantification · Model evaluation
 
-<span style="font-weight:600;">Programming & Database</span>: <br>
-Python · R · SQL · Stan · Julia · DuckDB · Bash
+<span style="font-weight:600;">Programming & Scientific Software</span>: <br>
+Python · R · SQL · Stan · Julia · Bash · PostgreSQL · DuckDB · Package development · Shiny
 
-<span style="font-weight:600;">Data Engineering & Reporting</span>: <br>
-ETL/ELT · Data modelling · Data cleaning · BI-ready reporting · APIs · Azure · AWS · Docker · Parquet · HPC
+<span style="font-weight:600;">Data Engineering & Cloud</span>: <br>
+ETL/ELT · Data modelling · Metadata & data governance · Automated validation · Dagster · APIs · Cloud object storage · Cloud-optimized geospatial access · Geospatial & remote-sensing data · AWS · Azure · Docker · Parquet
 
-<span style="font-weight:600;">DevOps & Reproducibility</span>: <br>
-Git · CI/CD · Unix · Unit testing · Make · Quarto · Jupyter · Automated validation
-
-<p style="margin-top: 0; margin-bottom: 1;font-size: 0.2rem;">
-<br>
-</p>
-
-Outreach
-------------------------------------
-
-· Developed and maintained the [QCBS R Workshop Series](https://r.qcbs.ca/), reaching nearly one thousand graduate students · Taught programming, statistics, SQL, and reproducible workflows to 250+ students across biology, engineering, and graduate programs · Translated stakeholder needs into technical analyses, documented pipelines, and clear analytical outputs
+<span style="font-weight:600;">Reproducibility & AI</span>: <br>
+Git · CI/CD · Unix · Make · HPC · Unit testing · Quarto · Jupyter · AI-assisted workflows
 
 <p style="margin-top: 0; margin-bottom: 1;font-size: 0.2rem;">
 <br>
@@ -88,18 +102,6 @@ Disclaimer {#disclaimer}
 --------------------------------------------------------------------------------
 
 ```{r footer, results='asis'}
-# Resolve the application tag with precedence: env var > data/application_tag.txt > none
-app_tag <- trimws(Sys.getenv('CV_APP_TAG', unset = ''))
-if (!nzchar(app_tag)) {
-  tag_file <- 'data/application_tag.txt'
-  if (file.exists(tag_file)) {
-    lines <- readLines(tag_file, warn = FALSE)
-    lines <- trimws(lines)
-    lines <- lines[nzchar(lines) & !startsWith(lines, '#')]
-    if (length(lines)) app_tag <- lines[1]
-  }
-}
-
 base_pages <- 'https://willvieira.github.io/cv'
 base_repo  <- 'https://github.com/willvieira/cv'
 if (nzchar(app_tag)) {
@@ -133,14 +135,14 @@ Main
 --------------------------------------------------------------------------------
 
 <p style="text-align:justify;margin-top: 4px; margin-bottom: 0;">
-  Data analyst and modelling specialist with a PhD in quantitative ecology. I build mathematical and statistical models using reproducible data workflows that turn complex data into validated, explainable outputs for operational decisions.
+  Data scientist with a PhD in quantitative ecology. I build statistical and machine learning models, and the reproducible data pipelines behind them, that turn complex, noisy data into validated, explainable results people can use to decide.
 </p>
 
-Data Science & Engineering Experience {data-icon=briefcase}
+Professional Experience {data-icon=briefcase}
 --------------------------------------------------------------------------------
 
 ```{r}
-print_section(position_data, 'experience')
+print_section(position_data, 'experience', bullets = TRUE)
 ```
 
 Education {data-icon=graduation-cap}
@@ -150,68 +152,18 @@ Education {data-icon=graduation-cap}
 print_section(position_data, 'education')
 ```
 
-<!-- 
-Research Experience {data-icon=laptop}
--------------------------------------------------------------------------------- -->
-
-```{r,eval=FALSE}
-print_section(position_data, 'research_positions')
+```{r}
+print_full_section(position_data, 'publications', 'Publications', 'book')
 ```
 
-
-<!-- Teaching Experience {data-icon=chalkboard-teacher}
--------------------------------------------------------------------------------- -->
-
-```{r,eval=FALSE}
-print_section(position_data, 'teaching_positions')
+```{r}
+print_full_section(position_data, 'teaching_positions', 'Teaching Experience', 'chalkboard-teacher')
 ```
 
-<!-- Training {data-icon=certificate}
--------------------------------------------------------------------------------- -->
-
-```{r,eval=FALSE}
-print_section(position_data, 'training')
+```{r}
+print_full_section(position_data, 'talk_poster', 'Selected Talks and Posters', 'comments')
 ```
 
-<!--
-Publications {data-icon=book}
---------------------------------------------------------------------------------
-
-### Unifying individual and metapopulation scales with stochastic population models: the effect of climate and competition on tree range limits
-
-In production. Preprint hosted on <a href="https://willvieira.github.io/ms_forest-suitable-probability/" target="_blank"><i class="fa fa-github"></i></a>
-
-N/A
-
-2026
-
-<span style="text-decoration: underline;">Vieira, W.</span>, Gravel, D.       
-
-### Sensitivity of tree species demography to climate and competition across their range
-
-Under review. Preprint hosted on <a href="https://willvieira.github.io/ms_forest-ipm-sensitivity/" target="_blank"><i class="fa fa-github"></i></a>
-
-N/A
-
-2026
-
-<span style="text-decoration: underline;">Vieira, W.</span>, MacDonald, A., Gravel, D.       
-
-```{r,eval=FALSE, warning = FALSE,message = FALSE}
-myORCID <- '0000-0003-0283-4570'
-underlineName <- 'Vieira, W.'
-
-# get edited publications from ORCID id
-pubs <- get_publications(myORCID, underlineName)
-
-print_publications(pubs)
-```
--->
-
-<!-- 
-Selected Talks and Posters {data-icon=chalkboard-teacher}
--------------------------------------------------------------------------------- -->
-
-```{r,eval=FALSE}
-print_section(position_data, 'talk_poster')
+```{r}
+print_full_section(position_data, 'training', 'Training', 'certificate')
 ```

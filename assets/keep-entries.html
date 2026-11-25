@@ -1,0 +1,26 @@
+<script>
+// Keep each CV entry on one page. The paged.js bundled with pagedown (0.1.43)
+// ignores break-inside: avoid, and an entry split across pages renders garbled
+// in the multi-page full CV, so move any break that falls inside an entry
+// (.blocks) to just before it.
+Paged.registerHandlers(class extends Paged.Handler {
+  onOverflow(overflow, rendered) {
+    if (!overflow) return;
+    var node = overflow.startContainer;
+    if (node.nodeType !== Node.ELEMENT_NODE) node = node.parentNode;
+    var block = node.closest('.blocks');
+    if (!block) return;
+    // An entry that starts the page cannot move further; let it split
+    var el = block, before = false;
+    while (el && el !== rendered && !before) {
+      before = !!el.previousElementSibling;
+      el = el.parentNode;
+    }
+    if (!before) return;
+    var range = document.createRange();
+    range.setStartBefore(block);
+    range.setEnd(overflow.endContainer, overflow.endOffset);
+    return range;
+  }
+});
+</script>
