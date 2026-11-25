@@ -44,17 +44,24 @@ jobs:
           # Tag-triggered runs render footer links pointing at /<tag>/
           CV_APP_TAG: ${{ github.ref_type == 'tag' && github.ref_name || '' }}
 
-      # Pinned: Chrome 157 (runner image 20261116) breaks pagedown 0.21
-      # ("Cannot find headless Chrome"). Same version as the Dockerfile.
+      # Pinned to the same Chrome as the Dockerfile so runner image updates
+      # don't change the browser under pagedown.
       - uses: browser-actions/setup-chrome@v1
         id: setup-chrome
         with:
           chrome-version: '155.0.8059.39'
 
+      # pagedown only adds --no-sandbox on Windows; since runner image 20261116
+      # Chrome exits at launch without it ("Cannot find headless Chrome").
+      # pagedown.chrome.log keeps Chrome's stderr, printed below on failure.
       - name: Render pdf
-        run: Rscript -e "pagedown::chrome_print(input = 'index.html', output = 'index.pdf', wait = 5)"
+        run: Rscript -e "options(pagedown.chrome.log = TRUE); pagedown::chrome_print(input = 'index.html', output = 'index.pdf', wait = 5, extra_args = c('--disable-gpu', '--no-sandbox'))"
         env:
           PAGEDOWN_CHROME: ${{ steps.setup-chrome.outputs.chrome-path }}
+
+      - name: Show Chrome log
+        if: failure()
+        run: cat chrome-stderr-*.log || true
 
       - name: Prepare deployment
         run: |
