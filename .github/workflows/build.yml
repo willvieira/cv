@@ -44,8 +44,17 @@ jobs:
           # Tag-triggered runs render footer links pointing at /<tag>/
           CV_APP_TAG: ${{ github.ref_type == 'tag' && github.ref_name || '' }}
 
+      # Pinned: Chrome 157 (runner image 20261116) breaks pagedown 0.21
+      # ("Cannot find headless Chrome"). Same version as the Dockerfile.
+      - uses: browser-actions/setup-chrome@v1
+        id: setup-chrome
+        with:
+          chrome-version: '155.0.8059.39'
+
       - name: Render pdf
         run: Rscript -e "pagedown::chrome_print(input = 'index.html', output = 'index.pdf', wait = 5)"
+        env:
+          PAGEDOWN_CHROME: ${{ steps.setup-chrome.outputs.chrome-path }}
 
       - name: Prepare deployment
         run: |
