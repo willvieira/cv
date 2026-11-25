@@ -1,5 +1,5 @@
 @page {
-  size: 8.5in 11.5in; /* increase height (e.g. 13in, 14in) to fit more content */
+  size: 8.5in 10.5in; /* increase height (e.g. 13in, 14in) to fit more content */
 }
 
 @media screen {
@@ -12,7 +12,7 @@
 }
 
 :root {
-  --sidebar-width: 2rem;                                                  
+  --sidebar-width: 2rem;
   --title-color: rgb(112, 59, 59);
   --aside-color: rgb(238 224 200);
   --link-color: rgb(211, 88, 49);
