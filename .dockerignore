@@ -1,0 +1,5 @@
+*
+!renv.lock
+!.Rprofile
+!renv/activate.R
+!renv/settings.dcf
